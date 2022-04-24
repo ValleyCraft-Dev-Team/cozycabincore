@@ -7,8 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 
 public class C_Groups {
-    public static final ItemGroup TEST_GROUP = FabricItemGroupBuilder.create(
-            Util.newId("test_group")).icon(() -> new ItemStack(Items.BREAD)).build();
+    public static final ItemGroup CABIN_GROUP = FabricItemGroupBuilder.create(
+            Util.newId("cabin")).icon(() -> new ItemStack(GLOW_BERRY_LANTERN)).build();
 
     public static void initialize() {
     }
