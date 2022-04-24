@@ -2,6 +2,7 @@ package net.linkle.cozy;
 
 import net.fabricmc.api.ModInitializer;
 import net.linkle.cozy.init.C_Blocks;
+import net.linkle.cozy.init.C_Groups;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,8 @@ public class CozyCabinCore implements ModInitializer {
 	public void onInitialize() {
 
 		C_Blocks.intialize();
+		
+		C_Groups.initialize();
 
 		LOGGER.info("Cozy Cabincore has initialized properly!");
 	}
