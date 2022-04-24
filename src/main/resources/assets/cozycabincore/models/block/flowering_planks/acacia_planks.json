@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cozycabincore:blocks/flowering_planks/acacia_planks"
+  }
+}
