@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cozycabincore:blocks/flowering_cabin_logs/oak_log_top",
+    "side": "cozycabincore:blocks/flowering_cabin_logs/oak_log"
+  }
+}
