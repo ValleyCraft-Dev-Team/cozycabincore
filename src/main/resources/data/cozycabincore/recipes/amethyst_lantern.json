@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#G#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "G": {
+      "item": "cozycabincore:glow_berry_lantern"
+    }
+  },
+  "result": {
+    "item": "cozycabincore:amethyst_lantern",
+    "count": 1
+  }
+}

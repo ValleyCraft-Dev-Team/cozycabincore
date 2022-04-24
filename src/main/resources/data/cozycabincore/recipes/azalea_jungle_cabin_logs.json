@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cozycabincore:azalea_jungle_log"
+    },
+    {
+      "item": "cozycabincore:azalea_jungle_log"
+    },
+    {
+      "item": "cozycabincore:azalea_jungle_log"
+    },
+    {
+      "item": "cozycabincore:azalea_jungle_log"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "cozycabincore:azalea_jungle_cabin_logs",
+    "count": 4
+  }
+}
