@@ -23,18 +23,15 @@ public class RenderLayers {
         put(GLOW_BERRY_LANTERN, cullout);
         put(FLOWER_LANTERN, cullout);
         put(AMETHYST_LANTERN, cullout);
-        put(GLOW_BERRY_LANTERN, translucent);
-        put(FLOWER_LANTERN, translucent);
-        put(AMETHYST_LANTERN, translucent);
-        put(SHORT_LILAC_BUSH, translucent);
-        put(SHORT_ROSE_BUSH, translucent);
-        put(SHORT_PEONY_BUSH, translucent);
+        put(GLOW_BERRY_LANTERN, cullout);
+        put(FLOWER_LANTERN, cullout);
+        put(AMETHYST_LANTERN, cullout);
         put(SHORT_LILAC_BUSH, cullout);
         put(SHORT_ROSE_BUSH, cullout);
         put(SHORT_PEONY_BUSH, cullout);
-        put(AZALEA_ACACIA_DOOR, translucent);
-        put(AZALEA_JUNGLE_DOOR, translucent);
-        put(AZALEA_OAK_DOOR, translucent);
+        put(AZALEA_ACACIA_DOOR, cullout);
+        put(AZALEA_JUNGLE_DOOR, cullout);
+        put(AZALEA_OAK_DOOR, cullout);
     }
     
     private static void put(Block block, RenderLayer layer) {
