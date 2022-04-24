@@ -1,9 +1,7 @@
 package net.linkle.cozy.init;
 
 import net.linkle.cozy.util.Reg;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
@@ -19,13 +17,13 @@ public class C_Blocks {
     public static final Block AZALEA_OAK_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block AZALEA_SPRUCE_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
 
-    public static final Block GLOW_BERRY_LANTERN = new Block(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block FLOWER_LANTERN = new Block(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block AMETHYST_LANTERN = new Block(Block.Settings.copy(Blocks.LANTERN));
+    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
+    public static final Block FLOWER_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
+    public static final Block AMETHYST_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
 
-    public static final Block SHORT_ROSE_BUSH = new Block(Block.Settings.copy(Blocks.CORNFLOWER));
-    public static final Block SHORT_LILAC_BUSH = new Block(Block.Settings.copy(Blocks.CORNFLOWER));
-    public static final Block SHORT_PEONY_BUSH = new Block(Block.Settings.copy(Blocks.CORNFLOWER));
+    public static final Block SHORT_ROSE_BUSH = new DeadBushBlock(Block.Settings.copy(Blocks.CORNFLOWER));
+    public static final Block SHORT_LILAC_BUSH = new DeadBushBlock(Block.Settings.copy(Blocks.CORNFLOWER));
+    public static final Block SHORT_PEONY_BUSH = new DeadBushBlock(Block.Settings.copy(Blocks.CORNFLOWER));
 
     public static final Block AZALEA_ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block AZALEA_BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
@@ -41,19 +39,19 @@ public class C_Blocks {
     public static final Block OAK_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
 
-    public static final Block AZALEA_ACACIA_DOOR = new PillarBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block AZALEA_BIRCH_DOOR = new PillarBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block AZALEA_DARK_OAK_DOOR = new PillarBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block AZALEA_JUNGLE_DOOR = new PillarBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block AZALEA_OAK_DOOR = new PillarBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block AZALEA_SPRUCE_DOOR = new PillarBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block AZALEA_ACACIA_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block AZALEA_BIRCH_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block AZALEA_DARK_OAK_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block AZALEA_JUNGLE_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block AZALEA_OAK_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block AZALEA_SPRUCE_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
 
-    public static final Block AZALEA_ACACIA_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block AZALEA_BIRCH_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block AZALEA_DARK_OAK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block AZALEA_JUNGLE_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block AZALEA_OAK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block AZALEA_SPRUCE_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block AZALEA_ACACIA_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block AZALEA_BIRCH_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block AZALEA_DARK_OAK_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block AZALEA_JUNGLE_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block AZALEA_OAK_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block AZALEA_SPRUCE_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
 
     public static void intialize() {
         Reg.registerWithItem("acacia_cabin_logs", ACACIA_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));

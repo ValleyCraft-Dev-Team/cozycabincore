@@ -29,6 +29,9 @@ public class RenderLayers {
         put(SHORT_LILAC_BUSH, translucent);
         put(SHORT_ROSE_BUSH, translucent);
         put(SHORT_PEONY_BUSH, translucent);
+        put(SHORT_LILAC_BUSH, cullout);
+        put(SHORT_ROSE_BUSH, cullout);
+        put(SHORT_PEONY_BUSH, cullout);
         put(AZALEA_ACACIA_DOOR, translucent);
         put(AZALEA_JUNGLE_DOOR, translucent);
         put(AZALEA_OAK_DOOR, translucent);
