@@ -3,12 +3,12 @@
 
   "block.cozycabincore.charcoal_block": "Charcoal Block",
 
-  "block.cozycabincore.acacia_planks": "Flowering Acacia Planks",
-  "block.cozycabincore.birch_planks": "Flowering Birch Planks",
-  "block.cozycabincore.dark_oak_planks": "Flowering Dark Oak Planks",
-  "block.cozycabincore.jungle_planks": "Flowering Jungle Planks",
-  "block.cozycabincore.oak_planks": "Flowering Oak Planks",
-  "block.cozycabincore.spruce_planks": "Flowering Spruce Planks",
+  "block.cozycabincore.azalea_acacia_planks": "Flowering Acacia Planks",
+  "block.cozycabincore.azalea_birch_planks": "Flowering Birch Planks",
+  "block.cozycabincore.azalea_dark_oak_planks": "Flowering Dark Oak Planks",
+  "block.cozycabincore.azalea_jungle_planks": "Flowering Jungle Planks",
+  "block.cozycabincore.azalea_oak_planks": "Flowering Oak Planks",
+  "block.cozycabincore.azalea_spruce_planks": "Flowering Spruce Planks",
 
   "block.cozycabincore.azalea_acacia_cabin_logs": "Flowering Acacia Cabin Logs",
   "block.cozycabincore.azalea_birch_cabin_logs": "Flowering Birch Cabin Logs",
