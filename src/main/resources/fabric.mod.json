@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "cozycabincore",
-  "version": "${version}",
+  "version": "1.0.0",
 
   "name": "Cozy Cabincore",
   "description": "Adds new log cabin themed building blocks and decorations to spice up your cottage/cabincore world!",
