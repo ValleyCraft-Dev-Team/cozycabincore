@@ -1,6 +1,6 @@
-package net.fabricmc.cozy.mixin;
+package net.linkle.cozy.mixin;
 
-import net.fabricmc.cozy.CozyCabinCore;
+import net.linkle.cozy.CozyCabinCore;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

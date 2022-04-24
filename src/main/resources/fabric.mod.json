@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "cozycabincore",
-  "version": "1.0.0",
+  "version": "${version}",
 
   "name": "Cozy Cabincore",
   "description": "Adds new log cabin themed building blocks and decorations to spice up your cottage/cabincore world!",
@@ -13,6 +13,13 @@
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/kfpmJ5PtnF"
+      }
+    }
+  },
 
   "license": "CC0-1.0",
   "icon": "assets/cozycabincore/icon.png",
@@ -20,7 +27,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.CozyCabinCore"
+      "net.linkle.cozy.CozyCabinCore"
+    ],
+    "client": [
+      "net.linkle.cozy.client.Client"
     ]
   },
   "mixins": [
@@ -30,7 +40,7 @@
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.18.2",
+    "minecraft": "1.18.x",
     "java": ">=17"
   },
   "suggests": {
