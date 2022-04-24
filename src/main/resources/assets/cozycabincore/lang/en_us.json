@@ -1,6 +1,11 @@
 {
   "itemGroup.cozycabincore.cabin": "Cabin",
 
+  "item.cozycabincore.thatch": "Thatch",
+  "block.cozycabincore.thatch_block": "Thatch Block",
+  "block.cozycabincore.thatch_stairs": "Thatch Stairs",
+  "block.cozycabincore.thatch_slab": "Thatch Slab",
+
   "block.cozycabincore.charcoal_block": "Charcoal Block",
 
   "block.cozycabincore.azalea_acacia_planks": "Flowering Acacia Planks",

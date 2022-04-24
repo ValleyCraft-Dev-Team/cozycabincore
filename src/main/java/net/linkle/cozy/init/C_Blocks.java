@@ -1,13 +1,24 @@
 package net.linkle.cozy.init;
 
+import net.linkle.cozy.block.ThatchSlab;
+import net.linkle.cozy.block.ThatchStairs;
+import net.linkle.cozy.item.ThatchItem;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.block.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Items;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
+import static net.linkle.cozy.CozyCabinCore.MOD_ID;
 import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 
 public class C_Blocks {
+    public static final Block THATCH_BLOCK = new PillarBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
+    public static final Block THATCH_STAIRS = new ThatchStairs();
+    public static final Block THATCH_SLAB = new ThatchSlab();
+
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
 
     public static final Block AZALEA_ACACIA_LOG = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
@@ -54,6 +65,10 @@ public class C_Blocks {
     public static final Block AZALEA_SPRUCE_PLANKS = new Block(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
 
     public static void intialize() {
+        Reg.registerWithItem("thatch_block", THATCH_BLOCK, new Item.Settings().group(CABIN_GROUP));
+        Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, new Item.Settings().group(CABIN_GROUP));
+        Reg.registerWithItem("thatch_slab", THATCH_SLAB, new Item.Settings().group(CABIN_GROUP));
+
         Reg.registerWithItem("acacia_cabin_logs", ACACIA_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("birch_cabin_logs", BIRCH_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("dark_oak_cabin_logs", DARK_OAK_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
