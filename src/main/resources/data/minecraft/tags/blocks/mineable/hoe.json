@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "cozycabincore:thatch_block",
+    "cozycabincore:thatch_stairs",
+    "cozycabincore:thatch_slab"
+  ]
+}

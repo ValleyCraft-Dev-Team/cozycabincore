@@ -1,21 +1,24 @@
 package net.linkle.cozy.init;
 
-import net.linkle.cozy.block.ThatchSlab;
-import net.linkle.cozy.block.ThatchStairs;
-import net.linkle.cozy.item.ThatchItem;
-import net.linkle.cozy.util.Reg;
-import net.minecraft.block.*;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-
-import static net.linkle.cozy.CozyCabinCore.MOD_ID;
 import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 
+import net.linkle.cozy.block.ThatchSlab;
+import net.linkle.cozy.block.ThatchStairs;
+import net.linkle.cozy.util.Reg;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.DoorBlock;
+import net.minecraft.block.HayBlock;
+import net.minecraft.block.LanternBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.Material;
+import net.minecraft.block.PillarBlock;
+import net.minecraft.block.PlantBlock;
+import net.minecraft.item.Item;
+import net.minecraft.sound.BlockSoundGroup;
+
 public class C_Blocks {
-    public static final Block THATCH_BLOCK = new PillarBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
+    public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
     public static final Block THATCH_STAIRS = new ThatchStairs();
     public static final Block THATCH_SLAB = new ThatchSlab();
 
@@ -28,9 +31,10 @@ public class C_Blocks {
     public static final Block AZALEA_OAK_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block AZALEA_SPRUCE_LOG = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
 
-    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block FLOWER_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block AMETHYST_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
+    private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
+    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
+    public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
+    public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
 
     public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
