@@ -12,7 +12,8 @@ import net.minecraft.world.World;
 
 public class ThatchStairs extends StairsBlock {
     public ThatchStairs() {
-        super(C_Blocks.THATCH_BLOCK.getDefaultState(), Settings.of(Material.PLANT)
+        super(C_Blocks.THATCH_BLOCK.getDefaultState(), 
+                Settings.of(Material.WOOD)
                 .sounds(BlockSoundGroup.GRASS)
                 .strength(0.5f));
     }

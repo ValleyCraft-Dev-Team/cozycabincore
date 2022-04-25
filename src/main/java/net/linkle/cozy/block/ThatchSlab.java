@@ -11,7 +11,7 @@ import net.minecraft.world.World;
 
 public class ThatchSlab extends SlabBlock {
     public ThatchSlab() {
-        super(Settings.of(Material.PLANT)
+        super(Settings.of(Material.WOOD)
                 .sounds(BlockSoundGroup.GRASS)
                 .strength(0.5f));
     }
