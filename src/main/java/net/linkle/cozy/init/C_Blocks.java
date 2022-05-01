@@ -28,10 +28,6 @@ public class C_Blocks {
     public static final Block AZALEA_OAK_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block AZALEA_SPRUCE_LOG = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
 
-    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block FLOWER_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block AMETHYST_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
-
     public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_PEONY_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
@@ -103,10 +99,6 @@ public class C_Blocks {
         Reg.registerWithItem("azalea_jungle_door", AZALEA_JUNGLE_DOOR, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("azalea_oak_door", AZALEA_OAK_DOOR, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("azalea_spruce_door", AZALEA_SPRUCE_DOOR, new Item.Settings().group(CABIN_GROUP));
-
-        Reg.registerWithItem("glow_berry_lantern", GLOW_BERRY_LANTERN, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("flower_lantern", FLOWER_LANTERN, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("amethyst_lantern", AMETHYST_LANTERN, new Item.Settings().group(CABIN_GROUP));
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, new Item.Settings().group(CABIN_GROUP));
 

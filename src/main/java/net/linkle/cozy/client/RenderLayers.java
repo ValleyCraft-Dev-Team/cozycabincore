@@ -20,12 +20,6 @@ public class RenderLayers {
         
         // Example
         //put(Blocks.GLASS, cullout);
-        put(GLOW_BERRY_LANTERN, cullout);
-        put(FLOWER_LANTERN, cullout);
-        put(AMETHYST_LANTERN, cullout);
-        put(GLOW_BERRY_LANTERN, cullout);
-        put(FLOWER_LANTERN, cullout);
-        put(AMETHYST_LANTERN, cullout);
         put(SHORT_LILAC_BUSH, cullout);
         put(SHORT_ROSE_BUSH, cullout);
         put(SHORT_PEONY_BUSH, cullout);
