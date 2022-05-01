@@ -10,8 +10,8 @@
     "AndEditor7 - Coding"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/ValleyCraft-Dev-Team",
+    "sources": "https://github.com/ValleyCraft-Dev-Team/cozycabincore"
   },
   "custom": {
     "modmenu": {
@@ -21,7 +21,7 @@
     }
   },
 
-  "license": "CC0-1.0",
+  "license": "BY-NC-SA 4.0 -> https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "icon": "assets/cozycabincore/icon.png",
 
   "environment": "*",
