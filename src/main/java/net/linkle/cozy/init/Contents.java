@@ -64,9 +64,9 @@ public class Contents {
         putFlammable(THATCH_STAIRS, 60, 20);
         putFlammable(THATCH_SLAB, 60, 20);
         
-        putFlammable(GLOW_BERRY_LANTERN, 5, 10);
-        putFlammable(FLOWER_LANTERN, 5, 10);
-        putFlammable(AMETHYST_LANTERN, 5, 10);
+        //putFlammable(GLOW_BERRY_LANTERN, 5, 10);
+        //putFlammable(FLOWER_LANTERN, 5, 10);
+        //putFlammable(AMETHYST_LANTERN, 5, 10);
         
         putFlammable(SHORT_ROSE_BUSH, 60, 100);
         putFlammable(SHORT_LILAC_BUSH, 60, 100);

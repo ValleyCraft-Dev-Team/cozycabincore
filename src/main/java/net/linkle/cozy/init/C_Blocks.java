@@ -37,10 +37,10 @@ public class C_Blocks {
     public static final Block AZALEA_OAK_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block AZALEA_SPRUCE_LOG = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
 
-    private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
-    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
-    public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
-    public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
+    //private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
+    //public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
+    //public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
+    //public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
 
     public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
