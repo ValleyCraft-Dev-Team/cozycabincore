@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "cozycabincore:blocks/flowering_logs/dark_oak_log_top",
-    "side": "cozycabincore:blocks/flowering_logs/dark_oak_log"
-  }
-}

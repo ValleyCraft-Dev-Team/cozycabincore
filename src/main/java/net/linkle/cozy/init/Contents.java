@@ -31,28 +31,7 @@ public class Contents {
         putCompost(THATCH_STAIRS, levelHigh);
     }
     
-    private static void flammable() {
-        putFlammable(AZALEA_ACACIA_PLANKS, 5, 20);
-        putFlammable(AZALEA_BIRCH_PLANKS, 5, 20);
-        putFlammable(AZALEA_DARK_OAK_PLANKS, 5, 20);
-        putFlammable(AZALEA_JUNGLE_PLANKS, 5, 20);
-        putFlammable(AZALEA_OAK_PLANKS, 5, 20);
-        putFlammable(AZALEA_SPRUCE_PLANKS, 5, 20);
-        
-        putFlammable(AZALEA_ACACIA_LOG, 5, 5);
-        putFlammable(AZALEA_BIRCH_LOG, 5, 5);
-        putFlammable(AZALEA_DARK_OAK_LOG, 5, 5);
-        putFlammable(AZALEA_JUNGLE_LOG, 5, 5);
-        putFlammable(AZALEA_OAK_LOG, 5, 5);
-        putFlammable(AZALEA_SPRUCE_LOG, 5, 5);
-        
-        putFlammable(AZALEA_ACACIA_CABIN_LOGS, 5, 5);
-        putFlammable(AZALEA_BIRCH_CABIN_LOGS, 5, 5);
-        putFlammable(AZALEA_DARK_OAK_CABIN_LOGS, 5, 5);
-        putFlammable(AZALEA_JUNGLE_CABIN_LOGS, 5, 5);
-        putFlammable(AZALEA_OAK_CABIN_LOGS, 5, 5);
-        putFlammable(AZALEA_SPRUCE_CABIN_LOGS, 5, 5);
-        
+    private static void flammable() {        
         putFlammable(ACACIA_CABIN_LOGS, 5, 5);
         putFlammable(BIRCH_CABIN_LOGS, 5, 5);
         putFlammable(DARK_OAK_CABIN_LOGS, 5, 5);

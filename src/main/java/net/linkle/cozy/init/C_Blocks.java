@@ -30,13 +30,6 @@ public class C_Blocks {
 
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
 
-    public static final Block AZALEA_ACACIA_LOG = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
-    public static final Block AZALEA_BIRCH_LOG = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
-    public static final Block AZALEA_DARK_OAK_LOG = new PillarBlock(Block.Settings.copy(Blocks.DARK_OAK_LOG));
-    public static final Block AZALEA_JUNGLE_LOG = new PillarBlock(Block.Settings.copy(Blocks.JUNGLE_LOG));
-    public static final Block AZALEA_OAK_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
-    public static final Block AZALEA_SPRUCE_LOG = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
-
     //private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
     //public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
     //public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
@@ -45,13 +38,6 @@ public class C_Blocks {
     public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_PEONY_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
-
-    public static final Block AZALEA_ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
-    public static final Block AZALEA_BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
-    public static final Block AZALEA_DARK_OAK_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.DARK_OAK_LOG));
-    public static final Block AZALEA_JUNGLE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.JUNGLE_LOG));
-    public static final Block AZALEA_OAK_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
-    public static final Block AZALEA_SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
 
     public static final Block ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
     public static final Block BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
@@ -67,13 +53,6 @@ public class C_Blocks {
     public static final Block AZALEA_OAK_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
     public static final Block AZALEA_SPRUCE_DOOR = new DoorBlock(Block.Settings.copy(Blocks.SPRUCE_DOOR));
 
-    public static final Block AZALEA_ACACIA_PLANKS = new Block(Block.Settings.copy(Blocks.ACACIA_PLANKS));
-    public static final Block AZALEA_BIRCH_PLANKS = new Block(Block.Settings.copy(Blocks.BIRCH_PLANKS));
-    public static final Block AZALEA_DARK_OAK_PLANKS = new Block(Block.Settings.copy(Blocks.DARK_OAK_PLANKS));
-    public static final Block AZALEA_JUNGLE_PLANKS = new Block(Block.Settings.copy(Blocks.JUNGLE_PLANKS));
-    public static final Block AZALEA_OAK_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block AZALEA_SPRUCE_PLANKS = new Block(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
-
     public static void intialize() {
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, new Item.Settings().group(CABIN_GROUP));
@@ -85,27 +64,6 @@ public class C_Blocks {
         Reg.registerWithItem("jungle_cabin_logs", JUNGLE_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("oak_cabin_logs", OAK_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("spruce_cabin_logs", SPRUCE_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
-
-        Reg.registerWithItem("azalea_acacia_log", AZALEA_ACACIA_LOG, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_birch_log", AZALEA_BIRCH_LOG, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_dark_oak_log", AZALEA_DARK_OAK_LOG, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_jungle_log", AZALEA_JUNGLE_LOG, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_oak_log", AZALEA_OAK_LOG, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_spruce_log", AZALEA_SPRUCE_LOG, new Item.Settings().group(CABIN_GROUP));
-
-        Reg.registerWithItem("azalea_acacia_planks", AZALEA_ACACIA_PLANKS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_birch_planks", AZALEA_BIRCH_PLANKS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_dark_oak_planks", AZALEA_DARK_OAK_PLANKS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_jungle_planks", AZALEA_JUNGLE_PLANKS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_oak_planks", AZALEA_OAK_PLANKS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_spruce_planks", AZALEA_SPRUCE_PLANKS, new Item.Settings().group(CABIN_GROUP));
-
-        Reg.registerWithItem("azalea_acacia_cabin_logs", AZALEA_ACACIA_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_birch_cabin_logs", AZALEA_BIRCH_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_dark_oak_cabin_logs", AZALEA_DARK_OAK_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_jungle_cabin_logs", AZALEA_JUNGLE_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_oak_cabin_logs", AZALEA_OAK_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
-        Reg.registerWithItem("azalea_spruce_cabin_logs", AZALEA_SPRUCE_CABIN_LOGS, new Item.Settings().group(CABIN_GROUP));
 
         Reg.registerWithItem("azalea_acacia_door", AZALEA_ACACIA_DOOR, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("azalea_birch_door", AZALEA_BIRCH_DOOR, new Item.Settings().group(CABIN_GROUP));
