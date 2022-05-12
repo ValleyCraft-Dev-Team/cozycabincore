@@ -23,6 +23,7 @@ public class RenderLayers {
         put(SHORT_LILAC_BUSH, cullout);
         put(SHORT_ROSE_BUSH, cullout);
         put(SHORT_PEONY_BUSH, cullout);
+        put(FLOWERING_VINES, cullout);
         put(AZALEA_ACACIA_DOOR, cullout);
         put(AZALEA_JUNGLE_DOOR, cullout);
         put(AZALEA_OAK_DOOR, cullout);

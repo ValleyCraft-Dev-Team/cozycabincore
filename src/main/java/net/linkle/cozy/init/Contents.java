@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemConvertible;
 
 public class Contents {
@@ -26,6 +27,7 @@ public class Contents {
         putCompost(SHORT_ROSE_BUSH, levelLow);
         putCompost(SHORT_LILAC_BUSH, levelLow);
         putCompost(SHORT_PEONY_BUSH, levelLow);
+        putCompost(FLOWERING_VINES, levelMed);
         putCompost(THATCH_SLAB, levelMed);
         putCompost(THATCH_BLOCK, levelHigh);
         putCompost(THATCH_STAIRS, levelHigh);
@@ -52,6 +54,7 @@ public class Contents {
         putFlammable(SHORT_PEONY_BUSH, 60, 100);
         
         putFlammable(CHARCOAL_BLOCK, 5, 5);
+        putFlammable(FLOWERING_VINES, 15, 100);
     }
     
     private static void fuels() {

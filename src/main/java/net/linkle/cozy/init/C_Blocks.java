@@ -1,8 +1,8 @@
 package net.linkle.cozy.init;
 
-import static net.linkle.cozy.CozyCabinCore.MOD_ID;
 import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 
+import net.linkle.cozy.block.FloweringVines;
 import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
 import net.linkle.cozy.item.ThatchItem;
@@ -11,15 +11,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.DoorBlock;
 import net.minecraft.block.HayBlock;
-import net.minecraft.block.LanternBlock;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.block.PlantBlock;
 import net.minecraft.item.Item;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class C_Blocks {
     public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
@@ -29,6 +23,8 @@ public class C_Blocks {
     public static final Item CABIN_GROUP_ICON = new ThatchItem(new Item.Settings());
 
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
+    
+    public static final Block FLOWERING_VINES = new FloweringVines();
 
     //private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
     //public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
@@ -75,6 +71,8 @@ public class C_Blocks {
         //Reg.registerWithItem("glow_berry_lantern", GLOW_BERRY_LANTERN, new Item.Settings().group(CABIN_GROUP));
         //Reg.registerWithItem("flower_lantern", FLOWER_LANTERN, new Item.Settings().group(CABIN_GROUP));
         //Reg.registerWithItem("amethyst_lantern", AMETHYST_LANTERN, new Item.Settings().group(CABIN_GROUP));
+        
+        Reg.registerWithItem("flowering_vines", FLOWERING_VINES, new Item.Settings().group(CABIN_GROUP));
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, new Item.Settings().group(CABIN_GROUP));
 
@@ -82,6 +80,6 @@ public class C_Blocks {
         Reg.registerWithItem("short_lilac_bush", SHORT_LILAC_BUSH, new Item.Settings().group(CABIN_GROUP));
         Reg.registerWithItem("short_peony_bush", SHORT_PEONY_BUSH, new Item.Settings().group(CABIN_GROUP));
 
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "cabin_item_group_icon"), CABIN_GROUP_ICON);
+        Reg.register("cabin_item_group_icon", CABIN_GROUP_ICON);
     }
 }
