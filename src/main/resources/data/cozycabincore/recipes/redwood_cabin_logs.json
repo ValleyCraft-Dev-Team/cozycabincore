@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cozycabincore:redwood_log"
+    },
+    {
+      "item": "cozycabincore:redwood_log"
+    },
+    {
+      "item": "cozycabincore:redwood_log"
+    },
+    {
+      "item": "cozycabincore:redwood_log"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "result": {
+    "item": "cozycabincore:redwood_cabin_logs",
+    "count": 4
+  }
+}

@@ -5,8 +5,8 @@ import static net.linkle.cozy.init.C_Blocks.*;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemConvertible;
 
 public class Contents {
@@ -14,8 +14,13 @@ public class Contents {
         compost();
         flammable();
         fuels();
+        strips();
     }
     
+    private static void strips() {
+        putStrip(REDWOOD_LOG, STRIPPED_REDWOOD_LOG);
+    }
+
     @SuppressWarnings("unused")
     private static void compost() {
         Float levelLow = 0.3f; // leaves, seeds, saplings, grass.
@@ -33,13 +38,21 @@ public class Contents {
         putCompost(THATCH_STAIRS, levelHigh);
     }
     
-    private static void flammable() {        
+    private static void flammable() {     
+        putFlammable(REDWOOD_LOG, 5, 5);
+        putFlammable(STRIPPED_REDWOOD_LOG, 5, 5);
+        putFlammable(REDWOOD_PLANKS, 5, 20);
+        putFlammable(REDWOOD_SLAB, 5, 20);
+        putFlammable(REDWOOD_STAIRS, 5, 20);
+        putFlammable(REDWOOD_FENCE, 5, 20);
+        putFlammable(REDWOOD_FENCE_GATE, 5, 20);
         putFlammable(ACACIA_CABIN_LOGS, 5, 5);
         putFlammable(BIRCH_CABIN_LOGS, 5, 5);
         putFlammable(DARK_OAK_CABIN_LOGS, 5, 5);
         putFlammable(JUNGLE_CABIN_LOGS, 5, 5);
         putFlammable(OAK_CABIN_LOGS, 5, 5);
         putFlammable(SPRUCE_CABIN_LOGS, 5, 5);
+        putFlammable(REDWOOD_CABIN_LOGS, 5, 5);
         
         putFlammable(THATCH_BLOCK, 60, 20);
         putFlammable(THATCH_STAIRS, 60, 20);
@@ -59,6 +72,10 @@ public class Contents {
     
     private static void fuels() {
         putFuels(CHARCOAL_BLOCK, 16000);
+    }
+    
+    private static void putStrip(Block input, Block stripped) {
+        StrippableBlockRegistry.register(input, stripped);
     }
     
     private static void putCompost(ItemConvertible item, Float chance) {
