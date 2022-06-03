@@ -39,15 +39,8 @@ public class C_Blocks {
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
     public static final Block FLOWERING_VINES = new FloweringVines();
-
-    //private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
-    //public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
-    //public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
-    //public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
     
-    //public static final Block REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
     public static final Block REDWOOD_LOG = createLogBlock(MapColor.TERRACOTTA_BROWN, MapColor.TERRACOTTA_BLACK);
-    //public static final Block STRIPPED_REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
     public static final Block STRIPPED_REDWOOD_LOG = createLogBlock(MapColor.TERRACOTTA_BROWN, MapColor.TERRACOTTA_BROWN);
     public static final Block REDWOOD_PLANKS = new Block(Block.Settings.of(Material.WOOD, MapColor.TERRACOTTA_BROWN).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD));
     public static final Block REDWOOD_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.TERRACOTTA_BROWN));
@@ -71,21 +64,20 @@ public class C_Blocks {
     public static final Block SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
     public static final Block REDWOOD_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
 
-    public static final Block AZALEA_ACACIA_DOOR = new DoorBlock(Block.Settings.copy(Blocks.ACACIA_DOOR));
-    public static final Block AZALEA_BIRCH_DOOR = new DoorBlock(Block.Settings.copy(Blocks.BIRCH_DOOR));
-    public static final Block AZALEA_DARK_OAK_DOOR = new DoorBlock(Block.Settings.copy(Blocks.DARK_OAK_DOOR));
-    public static final Block AZALEA_JUNGLE_DOOR = new DoorBlock(Block.Settings.copy(Blocks.JUNGLE_DOOR));
-    public static final Block AZALEA_OAK_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block AZALEA_SPRUCE_DOOR = new DoorBlock(Block.Settings.copy(Blocks.SPRUCE_DOOR));
+    public static final Block ACACIA_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_PLANKS));
+    public static final Block BIRCH_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_PLANKS));
+    public static final Block DARK_OAK_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.DARK_OAK_PLANKS));
+    public static final Block JUNGLE_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.JUNGLE_PLANKS));
+    public static final Block OAK_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block SPRUCE_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
+    public static final Block REDWOOD_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
 
     public static void intialize() {
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
         Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
         
-        //Reg.registerWithItem("redwood_wood", REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("redwood_log", REDWOOD_LOG, itemSettings());
-        //Reg.registerWithItem("stripped_redwood_wood", STRIPPED_REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("stripped_redwood_log", STRIPPED_REDWOOD_LOG, itemSettings());
         Reg.registerWithItem("redwood_planks", REDWOOD_PLANKS, itemSettings());
         Reg.registerWithItem("redwood_door", REDWOOD_DOOR, itemSettings());
@@ -105,20 +97,17 @@ public class C_Blocks {
         Reg.registerWithItem("spruce_cabin_logs", SPRUCE_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("redwood_cabin_logs", REDWOOD_CABIN_LOGS, itemSettings());
 
-        Reg.registerWithItem("azalea_acacia_door", AZALEA_ACACIA_DOOR, itemSettings());
-        Reg.registerWithItem("azalea_birch_door", AZALEA_BIRCH_DOOR, itemSettings());
-        Reg.registerWithItem("azalea_dark_oak_door", AZALEA_DARK_OAK_DOOR, itemSettings());
-        Reg.registerWithItem("azalea_jungle_door", AZALEA_JUNGLE_DOOR, itemSettings());
-        Reg.registerWithItem("azalea_oak_door", AZALEA_OAK_DOOR, itemSettings());
-        Reg.registerWithItem("azalea_spruce_door", AZALEA_SPRUCE_DOOR, itemSettings());
-
-        //Reg.registerWithItem("glow_berry_lantern", GLOW_BERRY_LANTERN, new Item.Settings().group(CABIN_GROUP));
-        //Reg.registerWithItem("flower_lantern", FLOWER_LANTERN, new Item.Settings().group(CABIN_GROUP));
-        //Reg.registerWithItem("amethyst_lantern", AMETHYST_LANTERN, new Item.Settings().group(CABIN_GROUP));
-        
-        Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
+        Reg.registerWithItem("acacia_log_planks", ACACIA_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("birch_log_planks", BIRCH_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("dark_oak_log_planks", DARK_OAK_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("jungle_log_planks", JUNGLE_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("oak_log_planks", OAK_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("spruce_log_planks", SPRUCE_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("redwood_log_planks", REDWOOD_BARK_PLANKS, itemSettings());
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
+
+        Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
 
         Reg.registerWithItem("short_rose_bush", SHORT_ROSE_BUSH, itemSettings());
         Reg.registerWithItem("short_lilac_bush", SHORT_LILAC_BUSH, itemSettings());

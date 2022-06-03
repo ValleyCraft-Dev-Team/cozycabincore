@@ -36,6 +36,14 @@
   "block.cozycabincore.azalea_oak_door": "Flowering Oak Door",
   "block.cozycabincore.azalea_spruce_door": "Flowering Spruce Door",
 
+  "block.cozycabincore.acacia_log_planks": "Acacia Bark Planks",
+  "block.cozycabincore.birch_log_planks": "Birch Bark Planks",
+  "block.cozycabincore.dark_oak_log_planks": "Dark Oak Bark Planks",
+  "block.cozycabincore.jungle_log_planks": "Jungle Bark Planks",
+  "block.cozycabincore.oak_log_planks": "Oak Bark Planks",
+  "block.cozycabincore.spruce_log_planks": "Spruce Bark Planks",
+  "block.cozycabincore.redwood_log_planks": "Redwood Bark Planks",
+
   "block.cozycabincore.flowering_vines": "Flowering Vines",
   "block.cozycabincore.short_rose_bush": "Small Rose Bush",
   "block.cozycabincore.short_lilac_bush": "Small Lilac Bush",
