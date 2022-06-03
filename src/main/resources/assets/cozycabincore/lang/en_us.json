@@ -10,7 +10,9 @@
   "block.cozycabincore.charcoal_block": "Charcoal Block",
   
   "block.cozycabincore.redwood_log": "Redwood Log",
+  "block.cozycabincore.redwood_wood": "Redwood Wood",
   "block.cozycabincore.stripped_redwood_log": "Stripped Redwood Log",
+  "block.cozycabincore.stripped_redwood_wood": "Stripped Redwood Wood",
   "block.cozycabincore.redwood_planks": "Redwood Planks",
   "block.cozycabincore.redwood_door": "Redwood Door",
   "block.cozycabincore.redwood_trapdoor": "Redwood Trapdoor",
@@ -20,6 +22,7 @@
   "block.cozycabincore.redwood_fence": "Redwood Fence",
   "block.cozycabincore.redwood_fence_gate": "Redwood Fence Gate",
   "block.cozycabincore.redwood_pressure_plate": "Redwood Pressure Plate",
+  "block.cozycabincore.redwood_sign": "Redwood Sign",
 
   "block.cozycabincore.acacia_cabin_logs": "Acacia Cabin Logs",
   "block.cozycabincore.birch_cabin_logs": "Birch Cabin Logs",

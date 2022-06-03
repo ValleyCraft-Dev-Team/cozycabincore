@@ -7,6 +7,7 @@ import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
 import net.linkle.cozy.item.ThatchItem;
 import net.linkle.cozy.util.Reg;
+import net.linkle.cozy.util.SignType;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -24,6 +25,7 @@ import net.minecraft.block.SignBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.WallSignBlock;
 import net.minecraft.block.WoodenButtonBlock;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
@@ -40,7 +42,9 @@ public class C_Blocks {
     
     public static final Block FLOWERING_VINES = new FloweringVines();
     
+    public static final Block REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
     public static final Block REDWOOD_LOG = createLogBlock(MapColor.TERRACOTTA_BROWN, MapColor.TERRACOTTA_BLACK);
+    public static final Block STRIPPED_REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
     public static final Block STRIPPED_REDWOOD_LOG = createLogBlock(MapColor.TERRACOTTA_BROWN, MapColor.TERRACOTTA_BROWN);
     public static final Block REDWOOD_PLANKS = new Block(Block.Settings.of(Material.WOOD, MapColor.TERRACOTTA_BROWN).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD));
     public static final Block REDWOOD_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.TERRACOTTA_BROWN));
@@ -51,6 +55,8 @@ public class C_Blocks {
     public static final Block REDWOOD_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.TERRACOTTA_BROWN));
     public static final Block REDWOOD_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.TERRACOTTA_BROWN));
     public static final Block REDWOOD_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_BROWN));
+    //public static final Block REDWOOD_SIGN = new SignBlock(Block.Settings.copy(Blocks.OAK_SIGN), SignType.REDWOOD);
+    //public static final Block REDWOOD_WALL_SIGN = new WallSignBlock(Block.Settings.copy(Blocks.OAK_WALL_SIGN).dropsLike(REDWOOD_SIGN), SignType.REDWOOD);
     
     public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
@@ -77,7 +83,9 @@ public class C_Blocks {
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
         Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
         
+        Reg.registerWithItem("redwood_wood", REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("redwood_log", REDWOOD_LOG, itemSettings());
+        Reg.registerWithItem("stripped_redwood_wood", STRIPPED_REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("stripped_redwood_log", STRIPPED_REDWOOD_LOG, itemSettings());
         Reg.registerWithItem("redwood_planks", REDWOOD_PLANKS, itemSettings());
         Reg.registerWithItem("redwood_door", REDWOOD_DOOR, itemSettings());
@@ -88,6 +96,8 @@ public class C_Blocks {
         Reg.registerWithItem("redwood_fence", REDWOOD_FENCE, itemSettings());
         Reg.registerWithItem("redwood_fence_gate", REDWOOD_FENCE_GATE, itemSettings());
         Reg.registerWithItem("redwood_pressure_plate", REDWOOD_PRESSURE_PLATE, itemSettings());
+        //Reg.register("redwood_sign", REDWOOD_SIGN);
+        //Reg.register("redwood_wall_sign", REDWOOD_WALL_SIGN);
 
         Reg.registerWithItem("acacia_cabin_logs", ACACIA_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("birch_cabin_logs", BIRCH_CABIN_LOGS, itemSettings());

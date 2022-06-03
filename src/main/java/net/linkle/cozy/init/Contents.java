@@ -19,6 +19,7 @@ public class Contents {
     
     private static void strips() {
         putStrip(REDWOOD_LOG, STRIPPED_REDWOOD_LOG);
+        putStrip(REDWOOD_WOOD, STRIPPED_REDWOOD_WOOD);
     }
 
     @SuppressWarnings("unused")
@@ -40,7 +41,9 @@ public class Contents {
     
     private static void flammable() {     
         putFlammable(REDWOOD_LOG, 5, 5);
+        putFlammable(REDWOOD_WOOD, 5, 5);
         putFlammable(STRIPPED_REDWOOD_LOG, 5, 5);
+        putFlammable(STRIPPED_REDWOOD_WOOD, 5, 5);
         putFlammable(REDWOOD_PLANKS, 5, 20);
         putFlammable(REDWOOD_SLAB, 5, 20);
         putFlammable(REDWOOD_STAIRS, 5, 20);

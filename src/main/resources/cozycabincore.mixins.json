@@ -4,8 +4,10 @@
   "package": "net.linkle.cozy.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "SignTypeInvoker"
   ],
   "client": [
+    
   ],
   "injectors": {
     "defaultRequire": 1

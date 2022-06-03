@@ -25,7 +25,7 @@ public class Reg {
         return Registry.register(Registry.BLOCK, newId(id), block);
     }
 
-    public static void register(String id, BlockItem item) {
+    public static void registerBlockItem(String id, BlockItem item) {
         var identifier = newId(id);
         Registry.register(Registry.BLOCK, identifier, item.getBlock());
         Registry.register(Registry.ITEM, identifier, item);
