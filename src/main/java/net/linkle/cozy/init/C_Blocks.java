@@ -68,7 +68,7 @@ public class C_Blocks {
     public static final Block JUNGLE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.JUNGLE_LOG));
     public static final Block OAK_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
-    public static final Block REDWOOD_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
+    public static final Block REDWOOD_CABIN_LOGS = new PillarBlock(Block.Settings.copy(REDWOOD_LOG));
 
     public static final Block ACACIA_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_PLANKS));
     public static final Block BIRCH_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_PLANKS));
@@ -76,7 +76,7 @@ public class C_Blocks {
     public static final Block JUNGLE_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.JUNGLE_PLANKS));
     public static final Block OAK_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
     public static final Block SPRUCE_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
-    public static final Block REDWOOD_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block REDWOOD_BARK_PLANKS = new PillarBlock(Block.Settings.copy(REDWOOD_PLANKS));
 
     public static void intialize() {
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
