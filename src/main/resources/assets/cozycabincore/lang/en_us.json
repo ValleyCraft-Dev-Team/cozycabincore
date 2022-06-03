@@ -32,13 +32,6 @@
   "block.cozycabincore.spruce_cabin_logs": "Spruce Cabin Logs",
   "block.cozycabincore.redwood_cabin_logs": "Redwood Cabin Logs",
 
-  "block.cozycabincore.azalea_acacia_door": "Flowering Acacia Door",
-  "block.cozycabincore.azalea_birch_door": "Flowering Birch Door",
-  "block.cozycabincore.azalea_dark_oak_door": "Flowering Dark Oak Door",
-  "block.cozycabincore.azalea_jungle_door": "Flowering Jungle Door",
-  "block.cozycabincore.azalea_oak_door": "Flowering Oak Door",
-  "block.cozycabincore.azalea_spruce_door": "Flowering Spruce Door",
-
   "block.cozycabincore.acacia_log_planks": "Acacia Bark Planks",
   "block.cozycabincore.birch_log_planks": "Birch Bark Planks",
   "block.cozycabincore.dark_oak_log_planks": "Dark Oak Bark Planks",
@@ -50,9 +43,5 @@
   "block.cozycabincore.flowering_vines": "Flowering Vines",
   "block.cozycabincore.short_rose_bush": "Small Rose Bush",
   "block.cozycabincore.short_lilac_bush": "Small Lilac Bush",
-  "block.cozycabincore.short_peony_bush": "Small Peony Bush",
-
-  "block.cozycabincore.glow_berry_lantern": "Glow Berry Lantern",
-  "block.cozycabincore.flower_lantern": "Azalea Glow Berry Lantern",
-  "block.cozycabincore.amethyst_lantern": "Amethyst Glow Berry Lantern"
+  "block.cozycabincore.short_peony_bush": "Small Peony Bush"
 }

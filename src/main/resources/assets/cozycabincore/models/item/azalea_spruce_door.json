@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "cozycabincore:items/doors/spruce_flower_door"
-  }
-}

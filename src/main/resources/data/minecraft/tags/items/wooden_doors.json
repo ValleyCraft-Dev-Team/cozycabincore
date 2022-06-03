@@ -1,12 +1,6 @@
 {
   "replace": false,
   "values": [
-  	"cozycabincore:redwood_door",
-    "cozycabincore:azalea_acacia_door",
-    "cozycabincore:azalea_birch_door",
-    "cozycabincore:azalea_dark_oak_door",
-    "cozycabincore:azalea_jungle_door",
-    "cozycabincore:azalea_oak_door",
-    "cozycabincore:azalea_spruce_door"
+  	"cozycabincore:redwood_door"
   ]
 }
