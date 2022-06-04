@@ -8,10 +8,10 @@ import net.minecraft.item.SignItem;
 
 public class C_Items {
     
-    //public static final Item OAK_SIGN = new SignItem(settings().maxCount(16), C_Blocks.REDWOOD_SIGN, C_Blocks.REDWOOD_WALL_SIGN);
+    public static final Item OAK_SIGN = new SignItem(settings().maxCount(16), C_Blocks.REDWOOD_SIGN, C_Blocks.REDWOOD_WALL_SIGN);
     
     public static void intialize() {
-        //Reg.register("redwood_sign", OAK_SIGN);
+        Reg.register("redwood_sign", OAK_SIGN);
     }
     
     private static Item.Settings settings() {

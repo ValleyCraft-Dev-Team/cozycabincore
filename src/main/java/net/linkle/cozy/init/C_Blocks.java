@@ -2,13 +2,15 @@ package net.linkle.cozy.init;
 
 import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.cozy.block.FloweringVines;
+import net.linkle.cozy.block.ModSignBlock;
 import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
 import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
 import net.linkle.cozy.item.ThatchItem;
+import net.linkle.cozy.util.ModSignType;
 import net.linkle.cozy.util.Reg;
-import net.linkle.cozy.util.SignType;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -24,7 +26,6 @@ import net.minecraft.block.PlantBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.block.SaplingBlock;
-import net.minecraft.block.SignBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.TrapdoorBlock;
@@ -58,8 +59,8 @@ public class C_Blocks {
     public static final Block REDWOOD_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.TERRACOTTA_BROWN));
     public static final Block REDWOOD_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.TERRACOTTA_BROWN));
     public static final Block REDWOOD_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_BROWN));
-    //public static final Block REDWOOD_SIGN = new SignBlock(Block.Settings.copy(Blocks.OAK_SIGN), SignType.REDWOOD);
-    //public static final Block REDWOOD_WALL_SIGN = new WallSignBlock(Block.Settings.copy(Blocks.OAK_WALL_SIGN).dropsLike(REDWOOD_SIGN), SignType.REDWOOD);
+    public static final Block REDWOOD_SIGN = new ModSignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN).dropsLike(CHARCOAL_BLOCK), ModSignType.REDWOOD);
+    public static final Block REDWOOD_WALL_SIGN = new WallSignBlock(Block.Settings.copy(Blocks.OAK_WALL_SIGN).dropsLike(REDWOOD_SIGN), ModSignType.REDWOOD);
     
     public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block REDWOOD_SAPLING = new SaplingBlock(new RedwoodSaplingGenerator(), Block.Settings.copy(Blocks.OAK_SAPLING));
@@ -101,8 +102,8 @@ public class C_Blocks {
         Reg.registerWithItem("redwood_fence", REDWOOD_FENCE, itemSettings());
         Reg.registerWithItem("redwood_fence_gate", REDWOOD_FENCE_GATE, itemSettings());
         Reg.registerWithItem("redwood_pressure_plate", REDWOOD_PRESSURE_PLATE, itemSettings());
-        //Reg.register("redwood_sign", REDWOOD_SIGN);
-        //Reg.register("redwood_wall_sign", REDWOOD_WALL_SIGN);
+        Reg.register("redwood_sign", REDWOOD_SIGN);
+        Reg.register("redwood_wall_sign", REDWOOD_WALL_SIGN);
 
         Reg.registerWithItem("redwood_leaves", REDWOOD_LEAVES, itemSettings());
         Reg.registerWithItem("redwood_sapling", REDWOOD_SAPLING, itemSettings());

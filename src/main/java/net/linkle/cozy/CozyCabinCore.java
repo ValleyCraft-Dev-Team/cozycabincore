@@ -10,7 +10,7 @@ import net.linkle.cozy.init.C_Groups;
 import net.linkle.cozy.init.C_Items;
 import net.linkle.cozy.init.Contents;
 import net.linkle.cozy.init.features.OverworldFeatures;
-import net.linkle.cozy.util.SignType;
+import net.linkle.cozy.util.ModSignType;
 
 public class CozyCabinCore implements ModInitializer {
     public static final String MOD_ID = "cozycabincore";
@@ -18,7 +18,7 @@ public class CozyCabinCore implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-	    SignType.intialize();
+	    ModSignType.intialize();
 		C_Blocks.intialize();
 		C_Items.intialize();
 		
