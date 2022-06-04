@@ -30,6 +30,8 @@ public class Contents {
         Float levelVery = 0.85f; // blocks.
         Float levelUltra = 1.0f; // specialties.
         
+        putCompost(REDWOOD_LEAVES, levelLow);
+        putCompost(REDWOOD_SAPLING, levelLow);
         putCompost(SHORT_ROSE_BUSH, levelLow);
         putCompost(SHORT_LILAC_BUSH, levelLow);
         putCompost(SHORT_PEONY_BUSH, levelLow);
@@ -56,6 +58,8 @@ public class Contents {
         putFlammable(OAK_CABIN_LOGS, 5, 5);
         putFlammable(SPRUCE_CABIN_LOGS, 5, 5);
         putFlammable(REDWOOD_CABIN_LOGS, 5, 5);
+        
+        putFlammable(REDWOOD_LEAVES, 30, 60);
         
         putFlammable(THATCH_BLOCK, 60, 20);
         putFlammable(THATCH_STAIRS, 60, 20);

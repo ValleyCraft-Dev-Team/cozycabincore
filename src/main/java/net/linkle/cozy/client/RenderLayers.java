@@ -10,22 +10,25 @@ import static net.linkle.cozy.init.C_Blocks.*;
 
 @Environment(EnvType.CLIENT)
 public class RenderLayers {
-    
+
+    @SuppressWarnings("unused")
     public static void intialize() {
-     // Only use cullout if the block's texture contains empty pixels.
+        // Only use cullout if the block's texture contains empty pixels.
         var cullout = RenderLayer.getCutout();
-        
+
         // Only use translucent if the block's texture contains transparent pixels.
         var translucent = RenderLayer.getTranslucent();
-        
+
         // Example
-        //put(Blocks.GLASS, cullout);
+        // put(Blocks.GLASS, cullout);
         put(SHORT_LILAC_BUSH, cullout);
         put(SHORT_ROSE_BUSH, cullout);
         put(SHORT_PEONY_BUSH, cullout);
         put(FLOWERING_VINES, cullout);
+        put(REDWOOD_LEAVES, cullout);
+        put(REDWOOD_SAPLING, cullout);
     }
-    
+
     private static void put(Block block, RenderLayer layer) {
         BlockRenderLayerMap.INSTANCE.putBlock(block, layer);
     }

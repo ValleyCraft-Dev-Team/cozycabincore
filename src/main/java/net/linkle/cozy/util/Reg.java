@@ -67,4 +67,8 @@ public class Reg {
                                                         RegistryEntry<? extends ConfiguredFeature<?, ?>> entry, PlacementModifier... modifiers) {
         return register(id, entry, List.of(modifiers));
     }
+    
+    public static <FC extends FeatureConfig, F extends Feature<FC>> RegistryEntry<ConfiguredFeature<?, ?>> register(String id, F feature, FC config) {
+        return add(BuiltinRegistries.CONFIGURED_FEATURE, id, new ConfiguredFeature<FC, F>(feature, config));
+    }
 }

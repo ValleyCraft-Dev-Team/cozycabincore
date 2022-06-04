@@ -5,6 +5,7 @@ import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 import net.linkle.cozy.block.FloweringVines;
 import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
+import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
 import net.linkle.cozy.item.ThatchItem;
 import net.linkle.cozy.util.Reg;
 import net.linkle.cozy.util.SignType;
@@ -15,12 +16,14 @@ import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.HayBlock;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.block.PlantBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
+import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.SignBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
@@ -58,6 +61,8 @@ public class C_Blocks {
     //public static final Block REDWOOD_SIGN = new SignBlock(Block.Settings.copy(Blocks.OAK_SIGN), SignType.REDWOOD);
     //public static final Block REDWOOD_WALL_SIGN = new WallSignBlock(Block.Settings.copy(Blocks.OAK_WALL_SIGN).dropsLike(REDWOOD_SIGN), SignType.REDWOOD);
     
+    public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
+    public static final Block REDWOOD_SAPLING = new SaplingBlock(new RedwoodSaplingGenerator(), Block.Settings.copy(Blocks.OAK_SAPLING));
     public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
     public static final Block SHORT_PEONY_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
@@ -70,13 +75,13 @@ public class C_Blocks {
     public static final Block SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
     public static final Block REDWOOD_CABIN_LOGS = new PillarBlock(Block.Settings.copy(REDWOOD_LOG));
 
-    public static final Block ACACIA_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_PLANKS));
-    public static final Block BIRCH_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_PLANKS));
-    public static final Block DARK_OAK_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.DARK_OAK_PLANKS));
-    public static final Block JUNGLE_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.JUNGLE_PLANKS));
-    public static final Block OAK_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block SPRUCE_BARK_PLANKS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
-    public static final Block REDWOOD_BARK_PLANKS = new PillarBlock(Block.Settings.copy(REDWOOD_PLANKS));
+    public static final Block ACACIA_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.ACACIA_PLANKS));
+    public static final Block BIRCH_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.BIRCH_PLANKS));
+    public static final Block DARK_OAK_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.DARK_OAK_PLANKS));
+    public static final Block JUNGLE_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.JUNGLE_PLANKS));
+    public static final Block OAK_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block SPRUCE_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
+    public static final Block REDWOOD_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
 
     public static void intialize() {
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
@@ -99,6 +104,9 @@ public class C_Blocks {
         //Reg.register("redwood_sign", REDWOOD_SIGN);
         //Reg.register("redwood_wall_sign", REDWOOD_WALL_SIGN);
 
+        Reg.registerWithItem("redwood_leaves", REDWOOD_LEAVES, itemSettings());
+        Reg.registerWithItem("redwood_sapling", REDWOOD_SAPLING, itemSettings());
+        
         Reg.registerWithItem("acacia_cabin_logs", ACACIA_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("birch_cabin_logs", BIRCH_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("dark_oak_cabin_logs", DARK_OAK_CABIN_LOGS, itemSettings());
