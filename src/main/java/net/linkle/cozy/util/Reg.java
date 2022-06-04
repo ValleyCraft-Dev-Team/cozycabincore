@@ -45,13 +45,11 @@ public class Reg {
         return BuiltinRegistries.add(registry, newId(id), value);
     }
 
-    public static RegistryEntry<PlacedFeature> register(String id,
-                                                        RegistryEntry<? extends ConfiguredFeature<?, ?>> entry, List<PlacementModifier> modifiers) {
+    public static RegistryEntry<PlacedFeature> register(String id, RegistryEntry<? extends ConfiguredFeature<?, ?>> entry, List<PlacementModifier> modifiers) {
         return add(BuiltinRegistries.PLACED_FEATURE, id, new PlacedFeature(RegistryEntry.upcast(entry), modifiers));
     }
 
-    public static RegistryEntry<PlacedFeature> register(String id, ConfiguredFeature<?, ?> config,
-                                                        List<PlacementModifier> modifiers) {
+    public static RegistryEntry<PlacedFeature> register(String id, ConfiguredFeature<?, ?> config, List<PlacementModifier> modifiers) {
         var identifier = newId(id);
         var entry = BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, identifier, config);
         return BuiltinRegistries.add(BuiltinRegistries.PLACED_FEATURE, identifier,
@@ -63,8 +61,7 @@ public class Reg {
         return register(id, config, List.of(modifiers));
     }
 
-    public static RegistryEntry<PlacedFeature> register(String id,
-                                                        RegistryEntry<? extends ConfiguredFeature<?, ?>> entry, PlacementModifier... modifiers) {
+    public static RegistryEntry<PlacedFeature> register(String id, RegistryEntry<? extends ConfiguredFeature<?, ?>> entry, PlacementModifier... modifiers) {
         return register(id, entry, List.of(modifiers));
     }
     
