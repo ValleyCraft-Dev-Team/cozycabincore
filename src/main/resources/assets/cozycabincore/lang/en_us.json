@@ -2,6 +2,8 @@
   "itemGroup.cozycabincore.cabin": "C³",
 
   "item.cozycabincore.thatch": "Thatch",
+  "item.cozycabincore.pine_tar": "Pine Tar",
+
   "item.cozycabincore.cabin_item_group_icon": "Cozy Cabincore Icon",
   "block.cozycabincore.thatch_block": "Thatch Block",
   "block.cozycabincore.thatch_stairs": "Thatch Stairs",

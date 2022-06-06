@@ -85,10 +85,6 @@ public class C_Blocks {
     public static final Block REDWOOD_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
 
     public static void intialize() {
-        Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
-        Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
-        Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
-        
         Reg.registerWithItem("redwood_wood", REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("redwood_log", REDWOOD_LOG, itemSettings());
         Reg.registerWithItem("stripped_redwood_wood", STRIPPED_REDWOOD_WOOD, itemSettings());
@@ -125,6 +121,10 @@ public class C_Blocks {
         Reg.registerWithItem("redwood_log_planks", REDWOOD_BARK_PLANKS, itemSettings());
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
+
+        Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
+        Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
+        Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
 
         Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
 

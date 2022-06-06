@@ -19,9 +19,9 @@ public class CozyCabinCore implements ModInitializer {
 	@Override
 	public void onInitialize() {
 	    ModSignType.intialize();
-		C_Blocks.intialize();
 		C_Items.intialize();
-		
+		C_Blocks.intialize();
+
 		TreeConfigFeatures.intialize();
 		OverworldFeatures.intialize();
 		
