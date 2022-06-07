@@ -1,0 +1,51 @@
+{
+  "parent": "cozycabincore:cabin_building/home",
+  "display": {
+    "title": {
+      "text": "Honey, I'm Home!"
+    },
+    "icon": {
+      "item": "cozycabincore:honey_icon"
+    },
+    "description": {
+      "text": "Combine pine sap & a bottle of honey to make pitch for sealing logs with."
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "cozycabincore:acacia_cabin_logs",
+      "cozycabincore:birch_cabin_logs",
+      "cozycabincore:dark_oak_cabin_logs",
+      "cozycabincore:jungle_cabin_logs",
+      "cozycabincore:oak_cabin_logs",
+      "cozycabincore:spruce_cabin_logs",
+      "cozycabincore:redwood_cabin_logs",
+      "cozycabincore:acacia_log_planks",
+      "cozycabincore:birch_log_planks",
+      "cozycabincore:dark_oak_log_planks",
+      "cozycabincore:jungle_log_planks",
+      "cozycabincore:oak_log_planks",
+      "cozycabincore:spruce_log_planks",
+      "cozycabincore:redwood_log_planks"
+    ]
+  },
+  "criteria": {
+    "pitch_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cozycabincore:pitch_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pitch_bottle"
+    ]
+  ]
+}

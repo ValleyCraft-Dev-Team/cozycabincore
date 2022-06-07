@@ -5,6 +5,7 @@ import static net.minecraft.item.Items.GLASS_BOTTLE;
 
 import net.linkle.cozy.item.PineTarItem;
 import net.linkle.cozy.item.PitchBottleItem;
+import net.linkle.cozy.item.ThatchItem;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.item.Item;
 import net.minecraft.item.SignItem;
@@ -15,10 +16,21 @@ public class C_Items {
     public static final Item PINE_TAR = new PineTarItem(settings().maxCount(64));
     public static final Item PITCH_BOTTLE = new PitchBottleItem(settings().maxCount(16).recipeRemainder(GLASS_BOTTLE));
 
+    //icons
+
+    public static final Item HOME_ICON = new ThatchItem(new Item.Settings());
+    public static final Item HONEY_ICON = new ThatchItem(new Item.Settings());
+
     public static void intialize() {
         Reg.register("pine_sap", PINE_TAR);
         Reg.register("pitch_bottle", PITCH_BOTTLE);
         Reg.register("redwood_sign", OAK_SIGN);
+
+        //icons
+
+        Reg.register("home_icon", HOME_ICON);
+        Reg.register("honey_icon", HONEY_ICON);
+
     }
 
     private static Item.Settings settings() {
