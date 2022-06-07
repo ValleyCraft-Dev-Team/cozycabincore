@@ -2,7 +2,8 @@
   "itemGroup.cozycabincore.cabin": "C³",
 
   "item.cozycabincore.thatch": "Thatch",
-  "item.cozycabincore.pine_tar": "Pine Tar",
+  "item.cozycabincore.pine_sap": "Pine Sap",
+  "item.cozycabincore.pitch_bottle": "Bottle of Sticky Pitch",
 
   "item.cozycabincore.cabin_item_group_icon": "Cozy Cabincore Icon",
   "block.cozycabincore.thatch_block": "Thatch Block",
@@ -44,7 +45,7 @@
   "block.cozycabincore.spruce_log_planks": "Spruce Bark Planks",
   "block.cozycabincore.redwood_log_planks": "Redwood Bark Planks",
 
-  "block.cozycabincore.flowering_vines": "Flowering Vines",
+  "block.cozycabincore.flowering_vines": "Flowering Azaelea Vines",
   "block.cozycabincore.short_rose_bush": "Small Rose Bush",
   "block.cozycabincore.short_lilac_bush": "Small Lilac Bush",
   "block.cozycabincore.short_peony_bush": "Small Peony Bush"

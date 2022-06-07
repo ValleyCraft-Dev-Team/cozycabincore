@@ -64,9 +64,12 @@ public class C_Blocks {
     
     public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block REDWOOD_SAPLING = new SaplingBlock(new RedwoodSaplingGenerator(), Block.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
-    public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
-    public static final Block SHORT_PEONY_BUSH = new PlantBlock(Block.Settings.copy(Blocks.CORNFLOWER));
+    public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block SHORT_PEONY_BUSH = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block REDWOOD_SORREL = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block PUFF_FLOWER = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block WILDFLOWERS = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
 
     public static final Block ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
     public static final Block BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
@@ -126,11 +129,15 @@ public class C_Blocks {
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
         Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
 
-        Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
+        Reg.registerWithItem("redwood_sorrel", REDWOOD_SORREL, itemSettings());
+        Reg.registerWithItem("wildflowers", WILDFLOWERS, itemSettings());
+        Reg.registerWithItem("puff_flower", PUFF_FLOWER, itemSettings());
 
         Reg.registerWithItem("short_rose_bush", SHORT_ROSE_BUSH, itemSettings());
         Reg.registerWithItem("short_lilac_bush", SHORT_LILAC_BUSH, itemSettings());
         Reg.registerWithItem("short_peony_bush", SHORT_PEONY_BUSH, itemSettings());
+
+        Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
 
         Reg.register("cabin_item_group_icon", CABIN_GROUP_ICON);
     }

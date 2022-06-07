@@ -24,7 +24,7 @@ public class OverworldFeatures {
         List<PlacementModifier> list;
         var vegetal = GenerationStep.Feature.VEGETAL_DECORATION;
         
-        list = VegetationPlacedFeatures.modifiersWithWouldSurvive(RarityFilterPlacementModifier.of(2), C_Blocks.REDWOOD_SAPLING);
+        list = VegetationPlacedFeatures.modifiersWithWouldSurvive(RarityFilterPlacementModifier.of(1), C_Blocks.REDWOOD_SAPLING);
         placed = Reg.register("redwood_placed", TreeConfigFeatures.MEGA_REDWOOD, list);
         
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA), vegetal, placed.getKey().get());
