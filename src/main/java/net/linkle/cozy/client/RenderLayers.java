@@ -27,6 +27,9 @@ public class RenderLayers {
         put(FLOWERING_VINES, cullout);
         put(REDWOOD_LEAVES, cullout);
         put(REDWOOD_SAPLING, cullout);
+        put(REDWOOD_SORREL, cullout);
+        put(WILDFLOWERS, cullout);
+        put(PUFF_FLOWER, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {
