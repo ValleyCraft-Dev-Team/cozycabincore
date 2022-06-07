@@ -4,6 +4,7 @@ import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.cozy.block.FloweringVines;
+import net.linkle.cozy.block.ModPlantBlock;
 import net.linkle.cozy.block.ModSignBlock;
 import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
@@ -22,7 +23,6 @@ import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.block.PillarBlock;
-import net.minecraft.block.PlantBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.block.SaplingBlock;
@@ -64,12 +64,12 @@ public class C_Blocks {
     
     public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block REDWOOD_SAPLING = new SaplingBlock(new RedwoodSaplingGenerator(), Block.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Block SHORT_ROSE_BUSH = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block SHORT_LILAC_BUSH = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block SHORT_PEONY_BUSH = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block REDWOOD_SORREL = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block PUFF_FLOWER = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block WILDFLOWERS = new PlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block SHORT_ROSE_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block SHORT_LILAC_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block SHORT_PEONY_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block REDWOOD_SORREL = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block PUFF_FLOWER = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block WILDFLOWERS = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
 
     public static final Block ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
     public static final Block BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
