@@ -49,6 +49,7 @@ public class ModBlocks {
     public static final Block REDWOOD_SORREL = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
     public static final Block PUFF_FLOWER = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
     public static final Block WILDFLOWERS = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    //public static final Block LEATHERY_POLYPODY = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
 
     public static final Block ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
     public static final Block BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
@@ -118,6 +119,7 @@ public class ModBlocks {
         Reg.registerWithItem("redwood_sorrel", REDWOOD_SORREL, itemSettings());
         Reg.registerWithItem("wildflowers", WILDFLOWERS, itemSettings());
         Reg.registerWithItem("puff_flower", PUFF_FLOWER, itemSettings());
+        //Reg.registerWithItem("leathery_polypody", LEATHERY_POLYPODY, itemSettings());
 
         Reg.registerWithItem("short_rose_bush", SHORT_ROSE_BUSH, itemSettings());
         Reg.registerWithItem("short_lilac_bush", SHORT_LILAC_BUSH, itemSettings());

@@ -32,6 +32,7 @@ public class RenderLayers {
         put(REDWOOD_SORREL, cullout);
         put(WILDFLOWERS, cullout);
         put(PUFF_FLOWER, cullout);
+        put(LEATHERY_POLYPODY, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {

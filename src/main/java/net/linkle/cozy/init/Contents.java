@@ -32,6 +32,10 @@ public class Contents {
         
         putCompost(REDWOOD_LEAVES, levelLow);
         putCompost(REDWOOD_SAPLING, levelLow);
+        putCompost(REDWOOD_SORREL, levelLow);
+        putCompost(PUFF_FLOWER, levelLow);
+        putCompost(WILDFLOWERS, levelLow);
+        //putCompost(LEATHERY_POLYPODY, levelLow);
         putCompost(SHORT_ROSE_BUSH, levelLow);
         putCompost(SHORT_LILAC_BUSH, levelLow);
         putCompost(SHORT_PEONY_BUSH, levelLow);
