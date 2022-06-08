@@ -44,7 +44,7 @@ public class ModBlocks {
     
     public static final Block FLOWERING_VINES = new FloweringVines();
     
-    private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
+    private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 10).nonOpaque();
     public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
     public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
     //public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
