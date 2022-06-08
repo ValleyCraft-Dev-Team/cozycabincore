@@ -22,7 +22,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cozycabincore:potted_puff_flower"
+          "name": "cozycabincore:puff_flower"
         }
       ],
       "conditions": [

@@ -22,7 +22,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cozycabincore:potted_wildflowers"
+          "name": "cozycabincore:wildflowers"
         }
       ],
       "conditions": [

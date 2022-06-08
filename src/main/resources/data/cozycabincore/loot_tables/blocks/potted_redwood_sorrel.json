@@ -22,7 +22,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cozycabincore:potted_redwood_sorrel"
+          "name": "cozycabincore:redwood_sorrel"
         }
       ],
       "conditions": [
