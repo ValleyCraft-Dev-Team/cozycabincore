@@ -1,6 +1,6 @@
 package net.linkle.cozy.init;
 
-import static net.linkle.cozy.init.C_Blocks.*;
+import static net.linkle.cozy.init.ModBlocks.*;
 
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;

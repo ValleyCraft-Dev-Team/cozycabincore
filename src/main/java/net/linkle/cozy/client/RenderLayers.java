@@ -6,7 +6,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
-import static net.linkle.cozy.init.C_Blocks.*;
+import static net.linkle.cozy.init.ModBlocks.*;
 
 @Environment(EnvType.CLIENT)
 public class RenderLayers {
@@ -21,6 +21,8 @@ public class RenderLayers {
 
         // Example
         // put(Blocks.GLASS, cullout);
+        put(GLOW_BERRY_LANTERN, cullout);
+        put(FLOWER_LANTERN, cullout);
         put(SHORT_LILAC_BUSH, cullout);
         put(SHORT_ROSE_BUSH, cullout);
         put(SHORT_PEONY_BUSH, cullout);

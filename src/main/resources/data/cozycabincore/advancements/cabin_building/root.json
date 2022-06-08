@@ -10,7 +10,7 @@
       "color": "green"
     },
     "icon": {
-      "item": "cozycabincore:cabin"
+      "item": "cozycabincore:cabin_icon"
     },
     "frame": "task",
     "show_toast": true,

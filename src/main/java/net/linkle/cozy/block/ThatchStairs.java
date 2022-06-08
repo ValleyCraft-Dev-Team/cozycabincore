@@ -1,6 +1,6 @@
 package net.linkle.cozy.block;
 
-import net.linkle.cozy.init.C_Blocks;
+import net.linkle.cozy.init.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.block.StairsBlock;
@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class ThatchStairs extends StairsBlock {
     public ThatchStairs() {
-        super(C_Blocks.THATCH_BLOCK.getDefaultState(), 
+        super(ModBlocks.THATCH_BLOCK.getDefaultState(), 
                 Settings.of(Material.WOOD)
                 .sounds(BlockSoundGroup.GRASS)
                 .strength(0.5f));

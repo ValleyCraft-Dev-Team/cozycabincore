@@ -3,7 +3,7 @@ package net.linkle.cozy.client;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.linkle.cozy.init.C_Blocks;
+import net.linkle.cozy.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
@@ -17,8 +17,8 @@ public class ColorProvider {
         BlockColorProvider blockProvider;
         ItemColorProvider itemProvider;
         
-        blockColor(newBlockColor(0x84BF70), C_Blocks.REDWOOD_LEAVES);
-        itemColor(newItemColor(0x84BF70), C_Blocks.REDWOOD_LEAVES);
+        blockColor(newBlockColor(0x84BF70), ModBlocks.REDWOOD_LEAVES);
+        itemColor(newItemColor(0x84BF70), ModBlocks.REDWOOD_LEAVES);
     }
     
     private static void blockColor(BlockColorProvider provider, Block... blocks) {
