@@ -1,11 +1,11 @@
 package net.linkle.cozy.init;
 
-import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
+import static net.linkle.cozy.init.ModGroups.CABIN_GROUP;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.cozy.block.*;
 import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
-import net.linkle.cozy.item.ThatchItem;
+import net.linkle.cozy.item.ItemIcon;
 import net.linkle.cozy.util.ModSignType;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.block.AbstractBlock;
@@ -31,12 +31,12 @@ import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
 
-public class C_Blocks {
+public class ModBlocks {
     public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
     public static final Block THATCH_STAIRS = new ThatchStairs();
     public static final Block THATCH_SLAB = new ThatchSlab();
 
-    public static final Item CABIN_GROUP_ICON = new ThatchItem(new Item.Settings());
+    public static final Item CABIN_GROUP_ICON = new ItemIcon();
 
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
