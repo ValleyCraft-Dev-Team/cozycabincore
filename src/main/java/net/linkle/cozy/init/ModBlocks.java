@@ -9,7 +9,6 @@ import net.linkle.cozy.block.ModSignBlock;
 import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
 import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
-import net.linkle.cozy.item.ItemIcon;
 import net.linkle.cozy.util.ModSignType;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.block.AbstractBlock;
@@ -19,6 +18,7 @@ import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.HayBlock;
+import net.minecraft.block.LanternBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
@@ -43,6 +43,11 @@ public class ModBlocks {
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
     public static final Block FLOWERING_VINES = new FloweringVines();
+    
+    private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 15).nonOpaque();
+    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
+    public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
+    //public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
     
     public static final Block REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
     public static final Block REDWOOD_LOG = createLogBlock(MapColor.TERRACOTTA_BROWN, MapColor.TERRACOTTA_BLACK);
@@ -120,6 +125,10 @@ public class ModBlocks {
         Reg.registerWithItem("oak_log_planks", OAK_BARK_PLANKS, itemSettings());
         Reg.registerWithItem("spruce_log_planks", SPRUCE_BARK_PLANKS, itemSettings());
         Reg.registerWithItem("redwood_log_planks", REDWOOD_BARK_PLANKS, itemSettings());
+        
+        Reg.registerWithItem("glow_berry_lantern", GLOW_BERRY_LANTERN, itemSettings());
+        Reg.registerWithItem("flower_lantern", FLOWER_LANTERN, itemSettings());
+        //Reg.registerWithItem("amethyst_lantern", AMETHYST_LANTERN, itemSettings());
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
 
