@@ -1,6 +1,6 @@
 package net.linkle.cozy.init;
 
-import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
+import static net.linkle.cozy.init.ModGroups.CABIN_GROUP;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.cozy.block.FloweringVines;
@@ -9,7 +9,7 @@ import net.linkle.cozy.block.ModSignBlock;
 import net.linkle.cozy.block.ThatchSlab;
 import net.linkle.cozy.block.ThatchStairs;
 import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
-import net.linkle.cozy.item.ThatchItem;
+import net.linkle.cozy.item.ItemIcon;
 import net.linkle.cozy.util.ModSignType;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.block.AbstractBlock;
@@ -35,12 +35,10 @@ import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
 
-public class C_Blocks {
+public class ModBlocks {
     public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
     public static final Block THATCH_STAIRS = new ThatchStairs();
     public static final Block THATCH_SLAB = new ThatchSlab();
-
-    public static final Item CABIN_GROUP_ICON = new ThatchItem(new Item.Settings());
 
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
@@ -64,12 +62,12 @@ public class C_Blocks {
     
     public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block REDWOOD_SAPLING = new SaplingBlock(new RedwoodSaplingGenerator(), Block.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Block SHORT_ROSE_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block SHORT_LILAC_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block SHORT_PEONY_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block REDWOOD_SORREL = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block PUFF_FLOWER = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block WILDFLOWERS = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    public static final Block SHORT_ROSE_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block SHORT_LILAC_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block SHORT_PEONY_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block REDWOOD_SORREL = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block PUFF_FLOWER = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block WILDFLOWERS = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
 
     public static final Block ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
     public static final Block BIRCH_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.BIRCH_LOG));
@@ -138,8 +136,6 @@ public class C_Blocks {
         Reg.registerWithItem("short_peony_bush", SHORT_PEONY_BUSH, itemSettings());
 
         Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
-
-        Reg.register("cabin_item_group_icon", CABIN_GROUP_ICON);
     }
     
     private static Item.Settings itemSettings() {

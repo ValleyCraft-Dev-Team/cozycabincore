@@ -2,7 +2,7 @@ package net.linkle.cozy.gen.feature;
 
 import com.google.common.collect.ImmutableList;
 
-import net.linkle.cozy.init.C_Blocks;
+import net.linkle.cozy.init.ModBlocks;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
@@ -19,8 +19,8 @@ import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
 
 public class TreeConfigFeatures {
     public static final RegistryEntry<ConfiguredFeature<?, ?>> MEGA_REDWOOD = Reg.register("mega_redwood", Feature.TREE,
-            new TreeFeatureConfig.Builder(BlockStateProvider.of(C_Blocks.REDWOOD_LOG), new GiantTrunkPlacer(13, 2, 14),
-                    BlockStateProvider.of(C_Blocks.REDWOOD_LEAVES),
+            new TreeFeatureConfig.Builder(BlockStateProvider.of(ModBlocks.REDWOOD_LOG), new GiantTrunkPlacer(13, 2, 14),
+                    BlockStateProvider.of(ModBlocks.REDWOOD_LEAVES),
                     new MegaPineFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0),
                             UniformIntProvider.create(13, 17)),
                     new TwoLayersFeatureSize(1, 1, 2))
