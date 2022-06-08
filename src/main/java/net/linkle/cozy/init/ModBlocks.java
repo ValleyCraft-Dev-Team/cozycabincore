@@ -8,25 +8,8 @@ import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
 import net.linkle.cozy.item.ItemIcon;
 import net.linkle.cozy.util.ModSignType;
 import net.linkle.cozy.util.Reg;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.DoorBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.HayBlock;
-import net.minecraft.block.LeavesBlock;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
-import net.minecraft.block.SaplingBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.TrapdoorBlock;
-import net.minecraft.block.WallSignBlock;
-import net.minecraft.block.WoodenButtonBlock;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
@@ -83,6 +66,11 @@ public class ModBlocks {
     public static final Block SPRUCE_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
     public static final Block REDWOOD_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
 
+    private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 10).nonOpaque();
+    public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
+    public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
+    //public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
+
     public static void intialize() {
         Reg.registerWithItem("redwood_wood", REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("redwood_log", REDWOOD_LOG, itemSettings());
@@ -117,6 +105,8 @@ public class ModBlocks {
         Reg.registerWithItem("redwood_log_planks", REDWOOD_BARK_PLANKS, itemSettings());
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
+        Reg.registerWithItem("glow_berry_lantern", GLOW_BERRY_LANTERN, itemSettings());
+        Reg.registerWithItem("flower_lantern", FLOWER_LANTERN, itemSettings());
 
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
