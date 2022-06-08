@@ -3,11 +3,7 @@ package net.linkle.cozy.init;
 import static net.linkle.cozy.init.C_Groups.CABIN_GROUP;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.linkle.cozy.block.FloweringVines;
-import net.linkle.cozy.block.ModPlantBlock;
-import net.linkle.cozy.block.ModSignBlock;
-import net.linkle.cozy.block.ThatchSlab;
-import net.linkle.cozy.block.ThatchStairs;
+import net.linkle.cozy.block.*;
 import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
 import net.linkle.cozy.item.ThatchItem;
 import net.linkle.cozy.util.ModSignType;
@@ -45,7 +41,7 @@ public class C_Blocks {
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
     public static final Block FLOWERING_VINES = new FloweringVines();
-    
+
     public static final Block REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
     public static final Block REDWOOD_LOG = createLogBlock(MapColor.TERRACOTTA_BROWN, MapColor.TERRACOTTA_BLACK);
     public static final Block STRIPPED_REDWOOD_WOOD = createLogBlock(MapColor.TERRACOTTA_BLACK, MapColor.TERRACOTTA_BLACK);
@@ -103,9 +99,6 @@ public class C_Blocks {
         Reg.registerWithItem("redwood_pressure_plate", REDWOOD_PRESSURE_PLATE, itemSettings());
         Reg.register("redwood_sign", REDWOOD_SIGN);
         Reg.register("redwood_wall_sign", REDWOOD_WALL_SIGN);
-
-        Reg.registerWithItem("redwood_leaves", REDWOOD_LEAVES, itemSettings());
-        Reg.registerWithItem("redwood_sapling", REDWOOD_SAPLING, itemSettings());
         
         Reg.registerWithItem("acacia_cabin_logs", ACACIA_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("birch_cabin_logs", BIRCH_CABIN_LOGS, itemSettings());
@@ -128,6 +121,9 @@ public class C_Blocks {
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
         Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
+
+        Reg.registerWithItem("redwood_leaves", REDWOOD_LEAVES, itemSettings());
+        Reg.registerWithItem("redwood_sapling", REDWOOD_SAPLING, itemSettings());
 
         Reg.registerWithItem("redwood_sorrel", REDWOOD_SORREL, itemSettings());
         Reg.registerWithItem("wildflowers", WILDFLOWERS, itemSettings());
