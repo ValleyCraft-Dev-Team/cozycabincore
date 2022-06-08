@@ -43,12 +43,14 @@ public class ModBlocks {
     
     public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block REDWOOD_SAPLING = new SaplingBlock(new RedwoodSaplingGenerator(), Block.Settings.copy(Blocks.OAK_SAPLING));
-    public static final Block SHORT_ROSE_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block SHORT_LILAC_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block SHORT_PEONY_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block REDWOOD_SORREL = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block PUFF_FLOWER = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
-    public static final Block WILDFLOWERS = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
+    
+    
+    public static final Block SHORT_ROSE_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block SHORT_LILAC_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block SHORT_PEONY_BUSH = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block REDWOOD_SORREL = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block PUFF_FLOWER = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final Block WILDFLOWERS = new ModPlantBlock(Block.Settings.copy(Blocks.POPPY));
     //public static final Block LEATHERY_POLYPODY = new ModPlantBlock(Block.Settings.copy(Blocks.GRASS));
 
     public static final Block ACACIA_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.ACACIA_LOG));
@@ -71,8 +73,16 @@ public class ModBlocks {
     public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
     public static final Block FLOWER_LANTERN = new LanternBlock(LANTERN);
     //public static final Block AMETHYST_LANTERN = new LanternBlock(LANTERN);
+    
+    public static final Block POTTED_REDWOOD_SORREL = new FlowerPotBlock(REDWOOD_SORREL, Block.Settings.copy(Blocks.POTTED_POPPY));
+    public static final Block POTTED_PUFF_FLOWER = new FlowerPotBlock(PUFF_FLOWER, Block.Settings.copy(Blocks.POTTED_POPPY));
+    public static final Block POTTED_WILDFLOWERS = new FlowerPotBlock(WILDFLOWERS, Block.Settings.copy(Blocks.POTTED_POPPY));
 
     public static void intialize() {
+        Reg.register("potted_redwood_sorrel", POTTED_REDWOOD_SORREL);
+        Reg.register("potted_puff_flower", POTTED_PUFF_FLOWER);
+        Reg.register("potted_wildflowers", POTTED_WILDFLOWERS);
+        
         Reg.registerWithItem("redwood_wood", REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("redwood_log", REDWOOD_LOG, itemSettings());
         Reg.registerWithItem("stripped_redwood_wood", STRIPPED_REDWOOD_WOOD, itemSettings());
