@@ -5,7 +5,6 @@ import static net.linkle.cozy.init.ModGroups.CABIN_GROUP;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.cozy.block.*;
 import net.linkle.cozy.block.sapling.RedwoodSaplingGenerator;
-import net.linkle.cozy.item.ItemIcon;
 import net.linkle.cozy.util.ModSignType;
 import net.linkle.cozy.util.Reg;
 import net.minecraft.block.*;
@@ -18,8 +17,6 @@ public class ModBlocks {
     public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
     public static final Block THATCH_STAIRS = new ThatchStairs();
     public static final Block THATCH_SLAB = new ThatchSlab();
-
-    public static final Item CABIN_GROUP_ICON = new ItemIcon();
 
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
@@ -136,8 +133,6 @@ public class ModBlocks {
         Reg.registerWithItem("short_peony_bush", SHORT_PEONY_BUSH, itemSettings());
 
         Reg.registerWithItem("flowering_vines", FLOWERING_VINES, itemSettings());
-
-        Reg.register("cabin_item_group_icon", CABIN_GROUP_ICON);
     }
     
     private static Item.Settings itemSettings() {

@@ -10,6 +10,7 @@ import net.linkle.cozy.init.ModGroups;
 import net.linkle.cozy.init.ModItems;
 import net.linkle.cozy.init.Contents;
 import net.linkle.cozy.init.features.OverworldFeatures;
+import net.linkle.cozy.tag.ModItemTags;
 import net.linkle.cozy.util.ModSignType;
 
 public class CozyCabinCore implements ModInitializer {
@@ -18,6 +19,7 @@ public class CozyCabinCore implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+	    ModItemTags.initialize();
 	    ModSignType.intialize();
 		ModItems.intialize();
 		ModBlocks.intialize();
