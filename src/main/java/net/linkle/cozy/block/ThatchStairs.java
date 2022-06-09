@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 public class ThatchStairs extends StairsBlock {
     public ThatchStairs() {
         super(ModBlocks.THATCH_BLOCK.getDefaultState(), 
-                Settings.of(Material.WOOD, MapColor.OAK_TAN)
+                Settings.of(Material.SOLID_ORGANIC, MapColor.OAK_TAN)
                 .sounds(BlockSoundGroup.GRASS)
                 .strength(0.5f));
     }
