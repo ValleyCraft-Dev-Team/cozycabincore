@@ -14,7 +14,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
 
 public class ModBlocks {
-    public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK));
+    public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.OAK_TAN));
     public static final Block THATCH_STAIRS = new ThatchStairs();
     public static final Block THATCH_SLAB = new ThatchSlab();
 
@@ -74,11 +74,17 @@ public class ModBlocks {
     public static final Block POTTED_REDWOOD_SORREL = new FlowerPotBlock(REDWOOD_SORREL, Block.Settings.copy(Blocks.POTTED_POPPY));
     public static final Block POTTED_PUFF_FLOWER = new FlowerPotBlock(PUFF_FLOWER, Block.Settings.copy(Blocks.POTTED_POPPY));
     public static final Block POTTED_WILDFLOWERS = new FlowerPotBlock(WILDFLOWERS, Block.Settings.copy(Blocks.POTTED_POPPY));
+    public static final Block POTTED_SHORT_ROSE = new FlowerPotBlock(SHORT_ROSE_BUSH, Block.Settings.copy(Blocks.POTTED_POPPY));
+    public static final Block POTTED_SHORT_LILAC = new FlowerPotBlock(SHORT_LILAC_BUSH, Block.Settings.copy(Blocks.POTTED_POPPY));
+    public static final Block POTTED_SHORT_PEONY = new FlowerPotBlock(SHORT_PEONY_BUSH, Block.Settings.copy(Blocks.POTTED_POPPY));
 
     public static void intialize() {
         Reg.register("potted_redwood_sorrel", POTTED_REDWOOD_SORREL);
         Reg.register("potted_puff_flower", POTTED_PUFF_FLOWER);
         Reg.register("potted_wildflowers", POTTED_WILDFLOWERS);
+        Reg.register("potted_short_rose", POTTED_SHORT_ROSE);
+        Reg.register("potted_short_lilac", POTTED_SHORT_LILAC);
+        Reg.register("potted_short_peony", POTTED_SHORT_PEONY);
         
         Reg.registerWithItem("redwood_wood", REDWOOD_WOOD, itemSettings());
         Reg.registerWithItem("redwood_log", REDWOOD_LOG, itemSettings());
@@ -140,6 +146,6 @@ public class ModBlocks {
     }
     
     private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
-        return new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor).strength(2.0f).sounds(BlockSoundGroup.WOOD));
+        return new PillarBlock(Block.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor).strength(2.0f).sounds(BlockSoundGroup.WOOD));
     }
 }

@@ -36,6 +36,9 @@ public class RenderLayers {
         put(POTTED_REDWOOD_SORREL, cullout);
         put(POTTED_PUFF_FLOWER, cullout);
         put(POTTED_WILDFLOWERS, cullout);
+        put(POTTED_SHORT_ROSE, cullout);
+        put(POTTED_SHORT_LILAC, cullout);
+        put(POTTED_SHORT_PEONY, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {

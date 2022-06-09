@@ -1,6 +1,7 @@
 package net.linkle.cozy.block;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.entity.Entity;
@@ -11,7 +12,7 @@ import net.minecraft.world.World;
 
 public class ThatchSlab extends SlabBlock {
     public ThatchSlab() {
-        super(Settings.of(Material.WOOD)
+        super(Settings.of(Material.SOLID_ORGANIC, MapColor.OAK_TAN)
                 .sounds(BlockSoundGroup.GRASS)
                 .strength(0.5f));
     }

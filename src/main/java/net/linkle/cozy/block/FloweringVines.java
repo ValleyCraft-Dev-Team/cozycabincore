@@ -1,15 +1,11 @@
 package net.linkle.cozy.block;
 
-import java.util.Random;
-
 import net.minecraft.block.BlockState;
 import net.minecraft.block.GlowLichenBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 
 public class FloweringVines extends GlowLichenBlock {
 
