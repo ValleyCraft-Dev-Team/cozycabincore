@@ -1,9 +1,8 @@
 package net.linkle.cozy.block.sapling;
 
-import java.util.Random;
-
 import net.linkle.cozy.gen.feature.TreeConfigFeatures;
 import net.minecraft.block.sapling.LargeTreeSaplingGenerator;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 

@@ -12,7 +12,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.world.biome.Biome.Category;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.blockpredicate.BlockPredicate;
@@ -53,8 +52,8 @@ public class OverworldFeatures {
         placed = registerPlant(createConfig("patch_wildflowers", 70, ModBlocks.WILDFLOWERS), 20);
         BiomeModifications.addFeature(birchForest.and(oldGrowthTaiga), vegetal, placed.getKey().get());
         
-        placed = registerPlant(createConfig("patch_rose_and_lilac", 70, ModBlocks.SHORT_ROSE_BUSH, ModBlocks.SHORT_LILAC_BUSH), 25);
-        BiomeModifications.addFeature(BiomeSelectors.categories(Category.FOREST), vegetal, placed.getKey().get());
+        //placed = registerPlant(createConfig("patch_rose_and_lilac", 70, ModBlocks.SHORT_ROSE_BUSH, ModBlocks.SHORT_LILAC_BUSH), 25);
+        //BiomeModifications.addFeature(BiomeSelectors.categories(Category.FOREST), vegetal, placed.getKey().get());
     }
     
     /** Create a random patch feature config. */
