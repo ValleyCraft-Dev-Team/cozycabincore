@@ -5,6 +5,7 @@ import java.util.stream.Stream;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBiomeTags;
 import net.linkle.cozy.gen.feature.TreeConfigFeatures;
 import net.linkle.cozy.init.ModBlocks;
 import net.linkle.cozy.util.Reg;
@@ -52,8 +53,8 @@ public class OverworldFeatures {
         placed = registerPlant(createConfig("patch_wildflowers", 70, ModBlocks.WILDFLOWERS), 20);
         BiomeModifications.addFeature(birchForest.and(oldGrowthTaiga), vegetal, placed.getKey().get());
         
-        //placed = registerPlant(createConfig("patch_rose_and_lilac", 70, ModBlocks.SHORT_ROSE_BUSH, ModBlocks.SHORT_LILAC_BUSH), 25);
-        //BiomeModifications.addFeature(BiomeSelectors.categories(Category.FOREST), vegetal, placed.getKey().get());
+        placed = registerPlant(createConfig("patch_rose_and_lilac", 70, ModBlocks.SHORT_ROSE_BUSH, ModBlocks.SHORT_LILAC_BUSH), 25);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.FOREST), vegetal, placed.getKey().get());
     }
     
     /** Create a random patch feature config. */
