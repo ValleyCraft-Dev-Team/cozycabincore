@@ -4,9 +4,9 @@
   "version": "${version}",
 
   "name": "Cozy Cabincore",
-  "description": "Adds new log cabin themed building blocks and decorations to spice up your cottage/cabincore world!",
+  "description": "Adds new log cabin themed building blocks and decorations to spice up your world!",
   "authors": [
-    "Linkle - Textures/Some Coding",
+    "Linkle - Textures",
     "AndEditor7 - Coding"
   ],
   "contact": {
