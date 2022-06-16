@@ -38,6 +38,9 @@ public class Contents {
         
         putCompost(FLOWERING_VINES, levelMed);
         putCompost(THATCH_SLAB, levelMed);
+        putCompost(SHORT_ROSE_BUSH, levelMed);
+        putCompost(SHORT_LILAC_BUSH, levelMed);
+        putCompost(SHORT_PEONY_BUSH, levelMed);
         
         putCompost(THATCH_BLOCK, levelHigh);
         putCompost(THATCH_STAIRS, levelHigh);
@@ -45,9 +48,6 @@ public class Contents {
         putCompost(PUFF_FLOWER, levelHigh);
         putCompost(WILDFLOWERS, levelHigh);
         //putCompost(LEATHERY_POLYPODY, levelHigh);
-        putCompost(SHORT_ROSE_BUSH, levelHigh);
-        putCompost(SHORT_LILAC_BUSH, levelHigh);
-        putCompost(SHORT_PEONY_BUSH, levelHigh);
     }
     
     private static void flammable() {     
@@ -67,6 +67,7 @@ public class Contents {
         putFlammable(OAK_CABIN_LOGS, 5, 5);
         putFlammable(SPRUCE_CABIN_LOGS, 5, 5);
         putFlammable(REDWOOD_CABIN_LOGS, 5, 5);
+        putFlammable(MANGROVE_CABIN_LOGS, 5, 5);
         putFlammable(ACACIA_BARK_PLANKS, 5, 10);
         putFlammable(BIRCH_BARK_PLANKS, 5, 10);
         putFlammable(DARK_OAK_BARK_PLANKS, 5, 10);
@@ -74,6 +75,7 @@ public class Contents {
         putFlammable(OAK_BARK_PLANKS, 5, 10);
         putFlammable(SPRUCE_BARK_PLANKS, 5, 10);
         putFlammable(REDWOOD_BARK_PLANKS, 5, 10);
+        putFlammable(MANGROVE_BARK_PLANKS, 5, 10);
         
         putFlammable(REDWOOD_LEAVES, 30, 60);
         
