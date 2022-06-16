@@ -57,7 +57,7 @@ public class ModBlocks {
     public static final Block OAK_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
     public static final Block REDWOOD_CABIN_LOGS = new PillarBlock(Block.Settings.copy(REDWOOD_LOG));
-    public static final Block MANGROVE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(REDWOOD_LOG));
+    public static final Block MANGROVE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.MANGROVE_LOG));
 
     public static final Block ACACIA_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.ACACIA_PLANKS));
     public static final Block BIRCH_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.BIRCH_PLANKS));
@@ -66,7 +66,7 @@ public class ModBlocks {
     public static final Block OAK_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
     public static final Block SPRUCE_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
     public static final Block REDWOOD_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
-    public static final Block MANGROVE_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
+    public static final Block MANGROVE_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.MANGROVE_PLANKS));
 
     private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 10).nonOpaque();
     public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
