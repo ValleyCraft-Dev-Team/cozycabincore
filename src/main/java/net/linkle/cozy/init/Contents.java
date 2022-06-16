@@ -38,6 +38,9 @@ public class Contents {
         
         putCompost(FLOWERING_VINES, levelMed);
         putCompost(THATCH_SLAB, levelMed);
+        putCompost(SHORT_ROSE_BUSH, levelMed);
+        putCompost(SHORT_LILAC_BUSH, levelMed);
+        putCompost(SHORT_PEONY_BUSH, levelMed);
         
         putCompost(THATCH_BLOCK, levelHigh);
         putCompost(THATCH_STAIRS, levelHigh);
@@ -45,9 +48,6 @@ public class Contents {
         putCompost(PUFF_FLOWER, levelHigh);
         putCompost(WILDFLOWERS, levelHigh);
         //putCompost(LEATHERY_POLYPODY, levelHigh);
-        putCompost(SHORT_ROSE_BUSH, levelHigh);
-        putCompost(SHORT_LILAC_BUSH, levelHigh);
-        putCompost(SHORT_PEONY_BUSH, levelHigh);
     }
     
     private static void flammable() {     
