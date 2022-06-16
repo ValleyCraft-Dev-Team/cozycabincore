@@ -57,6 +57,7 @@ public class ModBlocks {
     public static final Block OAK_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block SPRUCE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(Blocks.SPRUCE_LOG));
     public static final Block REDWOOD_CABIN_LOGS = new PillarBlock(Block.Settings.copy(REDWOOD_LOG));
+    public static final Block MANGROVE_CABIN_LOGS = new PillarBlock(Block.Settings.copy(REDWOOD_LOG));
 
     public static final Block ACACIA_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.ACACIA_PLANKS));
     public static final Block BIRCH_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.BIRCH_PLANKS));
@@ -65,6 +66,7 @@ public class ModBlocks {
     public static final Block OAK_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
     public static final Block SPRUCE_BARK_PLANKS = new Block(Block.Settings.copy(Blocks.SPRUCE_PLANKS));
     public static final Block REDWOOD_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
+    public static final Block MANGROVE_BARK_PLANKS = new Block(Block.Settings.copy(REDWOOD_PLANKS));
 
     private static final Block.Settings LANTERN = Block.Settings.of(new Material.Builder(MapColor.OAK_TAN).build()).sounds(BlockSoundGroup.WOOD).strength(2.5f).luminance(state -> 10).nonOpaque();
     public static final Block GLOW_BERRY_LANTERN = new LanternBlock(LANTERN);
@@ -108,6 +110,7 @@ public class ModBlocks {
         Reg.registerWithItem("jungle_cabin_logs", JUNGLE_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("oak_cabin_logs", OAK_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("spruce_cabin_logs", SPRUCE_CABIN_LOGS, itemSettings());
+        Reg.registerWithItem("mangrove_cabin_logs", MANGROVE_CABIN_LOGS, itemSettings());
         Reg.registerWithItem("redwood_cabin_logs", REDWOOD_CABIN_LOGS, itemSettings());
 
         Reg.registerWithItem("acacia_log_planks", ACACIA_BARK_PLANKS, itemSettings());
@@ -116,6 +119,7 @@ public class ModBlocks {
         Reg.registerWithItem("jungle_log_planks", JUNGLE_BARK_PLANKS, itemSettings());
         Reg.registerWithItem("oak_log_planks", OAK_BARK_PLANKS, itemSettings());
         Reg.registerWithItem("spruce_log_planks", SPRUCE_BARK_PLANKS, itemSettings());
+        Reg.registerWithItem("mangrove_log_planks", MANGROVE_BARK_PLANKS, itemSettings());
         Reg.registerWithItem("redwood_log_planks", REDWOOD_BARK_PLANKS, itemSettings());
 
         Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
