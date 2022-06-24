@@ -8,6 +8,7 @@ import net.linkle.cozy.gen.feature.TreeConfigFeatures;
 import net.linkle.cozy.init.ModBlocks;
 import net.linkle.cozy.init.ModGroups;
 import net.linkle.cozy.init.ModItems;
+import net.linkle.cozy.init.ModLootTable;
 import net.linkle.cozy.init.Contents;
 import net.linkle.cozy.init.features.OverworldFeatures;
 import net.linkle.cozy.tag.ModItemTags;
@@ -20,15 +21,16 @@ public class CozyCabinCore implements ModInitializer {
 	@Override
 	public void onInitialize() {
 	    ModItemTags.initialize();
-	    ModSignType.intialize();
-		ModItems.intialize();
-		ModBlocks.intialize();
+	    ModSignType.initialize();
+		ModItems.initialize();
+		ModBlocks.initialize();
 
-		TreeConfigFeatures.intialize();
-		OverworldFeatures.intialize();
+		TreeConfigFeatures.initialize();
+		OverworldFeatures.initialize();
 		
 		ModGroups.initialize();
 		Contents.initialize();
+		ModLootTable.initialize();
 		
 		LOGGER.info("Cozy Cabincore has initialized properly!");
 	}

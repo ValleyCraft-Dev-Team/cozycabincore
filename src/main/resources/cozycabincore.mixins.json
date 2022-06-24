@@ -4,8 +4,9 @@
   "package": "net.linkle.cozy.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "SignTypeInvoker",
-    "BlockEntityTypeMixin"
+    "SignTypeMixin",
+    "BlockEntityTypeMixin",
+    "LootBuilderMixin"
   ],
   "client": [
     

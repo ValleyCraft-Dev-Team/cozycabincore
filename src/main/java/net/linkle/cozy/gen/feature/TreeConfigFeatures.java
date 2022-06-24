@@ -28,7 +28,7 @@ public class TreeConfigFeatures {
                     .decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL))))
                     .build());
 
-    public static void intialize() {
+    public static void initialize() {
 
     }
 }

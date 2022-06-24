@@ -22,7 +22,7 @@ public class ModItems {
     public static final Item HONEY_ICON = new ItemIcon();
     public static final Item CABIN_ICON = new ItemIcon();
 
-    public static void intialize() {
+    public static void initialize() {
         Reg.register("pine_sap", PINE_TAR);
         Reg.register("pitch_bottle", PITCH_BOTTLE);
         Reg.register("redwood_sign", OAK_SIGN);
