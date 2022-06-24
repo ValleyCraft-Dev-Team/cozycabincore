@@ -8,7 +8,7 @@ public class ModSignBlock extends SignBlock {
 
     public ModSignBlock(Settings settings, SignType signType, String id) {
         super(settings, signType);
-        lootTableId = Util.newId("blocks/" + id + "_sign");
+        lootTableId = Util.newId("blocks/".concat(id));
     }
 
 }
