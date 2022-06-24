@@ -23,6 +23,7 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.SimpleBlockFeatureConfig;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
@@ -31,13 +32,13 @@ import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
 public class OverworldFeatures {
     
-    public static void intialize() {
+    public static void initialize() {
         RegistryEntry<PlacedFeature> placed;
         RegistryEntry<ConfiguredFeature<?, ?>> config;
         List<PlacementModifier> list;
         var vegetal = GenerationStep.Feature.VEGETAL_DECORATION;
         var oldGrowthTaiga = BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA);
-        var birchForest = BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA);
+        var birchForest = BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST, BiomeKeys.BIRCH_FOREST);
         
         // Redwood tree
         list = VegetationPlacedFeatures.modifiersWithWouldSurvive(RarityFilterPlacementModifier.of(1), ModBlocks.REDWOOD_SAPLING);
@@ -53,7 +54,7 @@ public class OverworldFeatures {
         placed = registerPlant(createConfig("patch_wildflowers", 70, ModBlocks.WILDFLOWERS), 20);
         BiomeModifications.addFeature(birchForest.and(oldGrowthTaiga), vegetal, placed.getKey().get());
         
-        placed = registerPlant(createConfig("patch_rose_and_lilac", 70, ModBlocks.SHORT_ROSE_BUSH, ModBlocks.SHORT_LILAC_BUSH), 25);
+        placed = registerPlant(createConfig("patch_rose_and_lilac", 70, ModBlocks.SHORT_ROSE_BUSH, ModBlocks.SHORT_LILAC_BUSH), 40);
         BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.FOREST), vegetal, placed.getKey().get());
     }
     
@@ -84,6 +85,6 @@ public class OverworldFeatures {
     }
     
     public static RegistryEntry<PlacedFeature> registerPlant(String id, RegistryEntry<ConfiguredFeature<?, ?>> config, int rarity) {
-        return Reg.register(id, config, RarityFilterPlacementModifier.of(rarity), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP);
+        return Reg.register(id, config, RarityFilterPlacementModifier.of(rarity), BiomePlacementModifier.of(), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP);
     }
 }

@@ -35,7 +35,7 @@ public class ModBlocks {
     public static final Block REDWOOD_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.TERRACOTTA_BROWN));
     public static final Block REDWOOD_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.TERRACOTTA_BROWN));
     public static final Block REDWOOD_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_BROWN));
-    public static final Block REDWOOD_SIGN = new ModSignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN).dropsLike(CHARCOAL_BLOCK), ModSignType.REDWOOD);
+    public static final Block REDWOOD_SIGN = new ModSignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN), ModSignType.REDWOOD, "redwood_sign");
     public static final Block REDWOOD_WALL_SIGN = new WallSignBlock(Block.Settings.copy(Blocks.OAK_WALL_SIGN).dropsLike(REDWOOD_SIGN), ModSignType.REDWOOD);
     
     public static final Block REDWOOD_LEAVES = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
@@ -80,7 +80,7 @@ public class ModBlocks {
     public static final Block POTTED_SHORT_LILAC = new FlowerPotBlock(SHORT_LILAC_BUSH, Block.Settings.copy(Blocks.POTTED_POPPY));
     public static final Block POTTED_SHORT_PEONY = new FlowerPotBlock(SHORT_PEONY_BUSH, Block.Settings.copy(Blocks.POTTED_POPPY));
 
-    public static void intialize() {
+    public static void initialize() {
         Reg.register("potted_redwood_sorrel", POTTED_REDWOOD_SORREL);
         Reg.register("potted_puff_flower", POTTED_PUFF_FLOWER);
         Reg.register("potted_wildflowers", POTTED_WILDFLOWERS);
