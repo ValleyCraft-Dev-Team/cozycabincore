@@ -17,6 +17,7 @@ public class ModBlocks {
     public static final Block THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.OAK_TAN));
     public static final Block THATCH_STAIRS = new ThatchStairs();
     public static final Block THATCH_SLAB = new ThatchSlab();
+    public static final Block PATTERNED_THATCH_BLOCK = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.OAK_TAN));
 
     public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
     
@@ -125,6 +126,7 @@ public class ModBlocks {
         Reg.registerWithItem("thatch_block", THATCH_BLOCK, itemSettings());
         Reg.registerWithItem("thatch_stairs", THATCH_STAIRS, itemSettings());
         Reg.registerWithItem("thatch_slab", THATCH_SLAB, itemSettings());
+        Reg.registerWithItem("patterned_thatch_block", PATTERNED_THATCH_BLOCK, itemSettings());
 
         Reg.registerWithItem("redwood_leaves", REDWOOD_LEAVES, itemSettings());
         Reg.registerWithItem("redwood_sapling", REDWOOD_SAPLING, itemSettings());
